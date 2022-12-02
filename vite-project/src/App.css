@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+ 
+/* ---------------------------------------------------------------
+Variables CSS
+*/
+
+
+/* Primary Colors */
+--Color-Primary-0: #FCEAE9;
+--Color-Primary-1: #F6BFBC;
+--Color-Primary-2: #F0948F;
+--Color-Primary-3: #EA6962;
+--Color-Primary-4: #E43E35;
+--Color-Primary-5: #CA251B;
+--Color-Primary-6: #9D1D15;
+--Color-Primary-7: #70150F;
+--Color-Primary-8: #430C09;
+--Color-Primary-9: #160403;
+
+
+/* Secondary Colors */
+--Color-Second-0: #E9FBFC;
+--Color-Second-1: #BCF3F6;
+--Color-Second-2: #8FEAF0;
+--Color-Second-3: #62E2EA;
+--Color-Second-4: #35DAE4;
+--Color-Second-5: #1BC1CA;
+--Color-Second-6: #15969D;
+--Color-Second-7: #0F6B70;
+--Color-Second-8: #094043;
+--Color-Second-9: #031516;
+
+
+/* Neutral Colors */
+--Color-Neutral-0: #F3F2F2;
+--Color-Neutral-1: #DBD7D7;
+--Color-Neutral-2: #C2BCBC;
+--Color-Neutral-3: #AAA1A1;
+--Color-Neutral-4: #928787;
+--Color-Neutral-5: #786D6D;
+--Color-Neutral-6: #5E5555;
+--Color-Neutral-7: #433D3D;
+--Color-Neutral-8: #282424;
+--Color-Neutral-9: #0D0C0C;
+
+
+/* Primary Fonts */
+/* --Font-Titles-0: font-family: 'Nunito', sans-serif; */
+/* 
+--titulos-1: 400 3.1875rem/8.124999701976776rem Nunito; 
+--titulos-1-bolt: extrabold 3.1875rem/8.124999701976776rem Nunito; 
+--titulos-2: 400 2.375rem/8.124999701976776rem Nunito; 
+--titulos-2-bolt: extrabold 2.375rem/8.124999701976776rem Nunito; 
+--titulos-3: 400 1.75rem/8.124999701976776rem Nunito; 
+--titulos-3-bolt: 700 1.75rem/8.124999701976776rem Nunito; 
+--titulos-4: 400 1.3125rem/8.124999701976776rem Nunito; 
+--titulos-4-bolt: 700 1.3125rem/8.124999701976776rem Nunito; 
+--titulos-5: 400 1rem/8.124999701976776rem Nunito; 
+--titulos-5-bolt: 700 1rem/8.124999701976776rem Nunito; 
+--titulos-6: 400 0.75rem/10.9375rem Nunito; 
+--titulos-6-bolt: 700 0.75rem/10.9375rem Nunito; 
+--titulos-7-bolt: 700 0.5625rem/normal Nunito; 
+--titulos-7: 400 0.5625rem/normal Nunito; 
+
+/* --texto-1: 400 3.1875rem/normal PT Sans;  */
+/* --texto-1: PT Sans;  */
+/* --texto-1-bolt: 700 3.1875rem/normal PT Sans;  */
+/* --texto-1-bolt: PT Sans bold;
+
+--texto-2: 400 2.375rem/normal PT Sans; 
+--texto-2-bolt: 700 2.375rem/normal PT Sans; 
+--texto-3: 400 1.75rem/normal PT Sans; 
+--texto-3-bolt: 700 1.75rem/normal PT Sans; 
+--texto-4: 400 1.3125rem/normal PT Sans; 
+--texto-4-bolt: 700 1.3125rem/normal PT Sans; 
+--texto-5: 400 1rem/10.9375rem PT Sans; 
+--texto-5-bolt: 700 1rem/10.9375rem PT Sans; 
+--texto-6: 400 0.75rem/normal PT Sans; 
+--texto-6-bolt: 700 0.75rem/normal PT Sans; 
+--texto-7: 400 0.5625rem/normal PT Sans; 
+--texto-7-bolt: 700 0.5625rem/normal PT Sans;  */ 
+
+
+/* --------------------------------------------------------------- */
+}
+
+
+
+ .gridContainter{
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background-color: var(--Color-Primary-9);
+
+  display: grid;
+  /* grid-template-columns: repeat(12, 1fr); */
+  grid-template-rows: 1fr;
+  grid-column-gap: 16px;
+
+
+ }
+
+ .NavBar{
+  background-color: var(--Color-Primary-8);
+  border-style: solid;
+
+  height: 3.25rem;
+  width: 100vw;
+  position: fixed;
+ }
+ .Header{
+  background-color: var(--Color-Primary-9);
+  border-style: solid;
+  height: 18.375rem;
+  margin-top: 4.0625rem;
+  margin-bottom: 84px;
+  /* height: 18.375rem; */
+ }
+ .About_me{
+  background-color: var(--Color-Primary-9);
+  border-style: solid;
+  height: 24.5625rem;
+  margin-bottom: 5.25rem;
+
+ }
+ .Skills{
+  background-color: var(--Color-Primary-9);
+  border-style: solid;
+  height: 52.125rem;
+  margin-bottom: 6.5625rem;
+ }
+ .My_projects{
+  background-color: var(--Color-Primary-9);
+  border-style: solid;
+  height: 58.125rem;
+  margin-bottom: 4.4375rem;
+ }
+ .Footer{
+  background-color: var(--Color-Primary-9);
+  border-style: solid;
+  height: 11.875rem;
+ }
+
+
+
+
+/* 
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */

@@ -114,7 +114,7 @@ Variables CSS
   background-color: var(--Color-Primary-8);
   border-style: solid;
 
-  height: 3.25rem;
+  height: 4.125rem;
   width: 100vw;
   position: fixed;
  }
@@ -122,7 +122,7 @@ Variables CSS
   background-color: var(--Color-Primary-9);
   border-style: solid;
   height: 18.375rem;
-  margin-top: 4.0625rem;
+  margin-top: 6.1875rem;
   margin-bottom: 84px;
   /* height: 18.375rem; */
  }

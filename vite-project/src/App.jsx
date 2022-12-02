@@ -9,8 +9,19 @@ function App() {
    <div className='gridContainter'>
 
     <div className='NavBar'>
-      <h1>NavBar</h1>
+      <nav className='nav'>
+        <input 
+          type='checkbox'
+          id='nav__checkbox'
+          className='nav__checkbox'
+        />
+        <label
+         htmlFor='nav__checkbox'
+         className='nav__toggle'
+         ></label>
+      </nav>
     </div>
+
     <div className='Header'>
       <h1>Header</h1>
     </div>

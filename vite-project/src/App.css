@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
   margin: 0;
   /* max-width: 1280px; */
@@ -92,9 +98,8 @@ Variables CSS
 
 
  .gridContainter{
-  height: 100vh;
+  /* height: 100vh; */
   /* width: 100vw; */
-  /* background-color: var(--Color-Primary-9); */
   background-color: var(--Color-Primary-9);
 
   display: grid;
@@ -106,34 +111,44 @@ Variables CSS
  }
 
  .NavBar{
-  background-color: var(--Color-Neutral-7);
+  background-color: var(--Color-Primary-8);
   border-style: solid;
 
   height: 3.25rem;
-  width: ;
+  width: 100vw;
   position: fixed;
  }
  .Header{
-  background-color: var(--Color-Neutral-7);
+  background-color: var(--Color-Primary-9);
   border-style: solid;
-
+  height: 18.375rem;
+  margin-top: 4.0625rem;
+  margin-bottom: 84px;
   /* height: 18.375rem; */
  }
  .About_me{
-  background-color: var(--Color-Neutral-7);
+  background-color: var(--Color-Primary-9);
   border-style: solid;
+  height: 24.5625rem;
+  margin-bottom: 5.25rem;
+
  }
  .Skills{
-  background-color: var(--Color-Neutral-7);
+  background-color: var(--Color-Primary-9);
   border-style: solid;
+  height: 52.125rem;
+  margin-bottom: 6.5625rem;
  }
  .My_projects{
-  background-color: var(--Color-Neutral-7);
+  background-color: var(--Color-Primary-9);
   border-style: solid;
+  height: 58.125rem;
+  margin-bottom: 4.4375rem;
  }
  .Footer{
-  background-color: var(--Color-Neutral-7);
+  background-color: var(--Color-Primary-9);
   border-style: solid;
+  height: 11.875rem;
  }
 
 

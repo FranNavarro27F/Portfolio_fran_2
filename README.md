@@ -7,3 +7,6 @@
  ![image](https://user-images.githubusercontent.com/101297908/205187732-9678b9bf-887f-4194-b031-3ba97a9e2c83.png)
  ![image](https://user-images.githubusercontent.com/101297908/205187779-f834df3d-07a8-422f-b8d5-0523b27be4fb.png)
 
+### Figma-Desktop Design:
+> ![image](https://user-images.githubusercontent.com/101297908/205188081-7ddbcfde-6eb9-4054-9b7c-9e63e789abdd.png)
+

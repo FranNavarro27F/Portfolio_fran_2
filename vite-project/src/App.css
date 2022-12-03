@@ -55,41 +55,42 @@ Variables CSS
 --Color-Neutral-9: #0D0C0C;
 
 
-/* Primary Fonts */
+
+
+
+/* Primary Fonts
 /* --Font-Titles-0: font-family: 'Nunito', sans-serif; */
-/* 
---titulos-1: 400 3.1875rem/8.124999701976776rem Nunito; 
---titulos-1-bolt: extrabold 3.1875rem/8.124999701976776rem Nunito; 
---titulos-2: 400 2.375rem/8.124999701976776rem Nunito; 
---titulos-2-bolt: extrabold 2.375rem/8.124999701976776rem Nunito; 
---titulos-3: 400 1.75rem/8.124999701976776rem Nunito; 
---titulos-3-bolt: 700 1.75rem/8.124999701976776rem Nunito; 
---titulos-4: 400 1.3125rem/8.124999701976776rem Nunito; 
---titulos-4-bolt: 700 1.3125rem/8.124999701976776rem Nunito; 
---titulos-5: 400 1rem/8.124999701976776rem Nunito; 
---titulos-5-bolt: 700 1rem/8.124999701976776rem Nunito; 
---titulos-6: 400 0.75rem/10.9375rem Nunito; 
---titulos-6-bolt: 700 0.75rem/10.9375rem Nunito; 
---titulos-7-bolt: 700 0.5625rem/normal Nunito; 
---titulos-7: 400 0.5625rem/normal Nunito; 
 
-/* --texto-1: 400 3.1875rem/normal PT Sans;  */
-/* --texto-1: PT Sans;  */
-/* --texto-1-bolt: 700 3.1875rem/normal PT Sans;  */
-/* --texto-1-bolt: PT Sans bold;
+/* --titulos-1: "400 3.1875rem/8.124999701976776rem Nunito"; */
+--titulos-1: "Nunito";
+--titulos-1-bolt: "extrabold 3.1875rem/8.124999701976776rem Nunito"; 
+--titulos-2: "400 2.375rem/8.124999701976776rem Nunito"; 
+--titulos-2-bolt: "extrabold 2.375rem/8.124999701976776rem Nunito"; 
+--titulos-3: "400 1.75rem/8.124999701976776rem Nunito"; 
+--titulos-3-bolt: "700 1.75rem/8.124999701976776rem Nunito"; 
+--titulos-4: "400 1.3125rem/8.124999701976776rem Nunito"; 
+--titulos-4-bolt: "700 1.3125rem/8.124999701976776rem Nunito"; 
+--titulos-5: "400 1rem/8.124999701976776rem Nunito"; 
+--titulos-5-bolt: "700 1rem/8.124999701976776rem Nunito"; 
+--titulos-6: "400 0.75rem/10.9375rem Nunito"; 
+--titulos-6-bolt: "700 0.75rem/10.9375rem Nunito"; 
+--titulos-7-bolt: "700 0.5625rem/normal Nunito"; 
+--titulos-7: "400 0.5625rem/normal Nunito"; 
 
---texto-2: 400 2.375rem/normal PT Sans; 
---texto-2-bolt: 700 2.375rem/normal PT Sans; 
---texto-3: 400 1.75rem/normal PT Sans; 
---texto-3-bolt: 700 1.75rem/normal PT Sans; 
---texto-4: 400 1.3125rem/normal PT Sans; 
---texto-4-bolt: 700 1.3125rem/normal PT Sans; 
---texto-5: 400 1rem/10.9375rem PT Sans; 
---texto-5-bolt: 700 1rem/10.9375rem PT Sans; 
---texto-6: 400 0.75rem/normal PT Sans; 
---texto-6-bolt: 700 0.75rem/normal PT Sans; 
---texto-7: 400 0.5625rem/normal PT Sans; 
---texto-7-bolt: 700 0.5625rem/normal PT Sans;  */ 
+--texto-1: "400 3.1875rem/normal PT Sans"; 
+--texto-1-bolt: "700 3.1875rem/normal PT Sans"; 
+--texto-2: "400 2.375rem/normal PT Sans"; 
+--texto-2-bolt: "700 2.375rem/normal PT Sans"; 
+--texto-3: "400 1.75rem/normal PT Sans"; 
+--texto-3-bolt: "700 1.75rem/normal PT Sans"; 
+--texto-4: "400 1.3125rem/normal PT Sans"; 
+--texto-4-bolt: "700 1.3125rem/normal PT Sans"; 
+--texto-5: "400 1rem/10.9375rem PT Sans"; 
+--texto-5-bolt: "700 1rem/10.9375rem PT Sans"; 
+--texto-6: "400 0.75rem/normal PT Sans"; 
+--texto-6-bolt: "700 0.75rem/normal PT Sans"; 
+--texto-7: "400 0.5625rem/normal PT Sans"; 
+--texto-7-bolt: "700 0.5625rem/normal PT Sans"; 
 
 
 /* --------------------------------------------------------------- */
@@ -114,7 +115,7 @@ Variables CSS
   background-color: var(--Color-Primary-8);
   border-style: solid;
 
-  height: 4.125rem;
+  /* height: 4.125rem; */
   width: 100vw;
   position: fixed;
  }
@@ -124,6 +125,7 @@ Variables CSS
   height: 18.375rem;
   margin-top: 6.1875rem;
   margin-bottom: 84px;
+  font-family: var(--titulos-1);
   /* height: 18.375rem; */
  }
  .About_me{
@@ -151,7 +153,53 @@ Variables CSS
   height: 11.875rem;
  }
 
+/* Menu Mobile --------------*/
 
+.nav{
+  border-bottom: 1px solid var(--Color-Neutral-3);
+}
+.nav__toggle{
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+.svg{}
+.close{
+  display: none;
+}
+.menu{
+  margin-top: 0.2rem;
+}
+.nav__checkbox{
+  display: none;
+}
+.nav__menu{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+.nav__menu li{
+  list-style: none;
+}
+.nav__menu li:first-child{
+  margin-right: auto;
+}
+.nav__menu li a{
+  text-decoration: none;
+  font-family: var(--titulos-1);
+  /* font-size: 2.375rem ; */
+  color: var(--Color-Second-1);
+}
+.logo_fran{
+  height: 1.5625rem;
+}
+
+
+
+/* ------------------------- */
 
 
 /* 

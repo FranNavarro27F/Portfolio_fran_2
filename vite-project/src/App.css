@@ -113,9 +113,10 @@ Variables CSS
 
  .NavBar{
   background-color: var(--Color-Primary-8);
-  border-style: solid;
+  /* border-style: solid; */
 
   /* height: 4.125rem; */
+  min-height: 4.125rem;
   width: 100vw;
   position: fixed;
  }
@@ -157,6 +158,7 @@ Variables CSS
 
 .nav{
   border-bottom: 1px solid var(--Color-Neutral-3);
+  min-height: 2.8rem;
 }
 .nav__toggle{
   position: absolute;
@@ -183,13 +185,16 @@ Variables CSS
 }
 .nav__menu li{
   list-style: none;
+  display:none;
 }
 .nav__menu li:first-child{
   margin-right: auto;
+  display: block;
 }
 .nav__menu li a{
   text-decoration: none;
   font-family: var(--titulos-1);
+  font-size: 1.2rem;
   /* font-size: 2.375rem ; */
   color: var(--Color-Second-1);
 }
@@ -197,6 +202,9 @@ Variables CSS
   height: 1.5625rem;
 }
 
+#nav__checkbox :checked ~ ul.nav__menu li{
+  display: block;
+}
 
 
 /* ------------------------- */

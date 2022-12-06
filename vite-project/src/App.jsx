@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import menu from "./assets/menu.svg";
+import fran_logo from "./assets/fran-dev-logo-claro.png";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,11 @@ function App() {
 
     <nav className='nav'>
       <div className='nav__container'>
-        <h1 className='nav__logo'>Fran</h1>
+        {/* <h1 className='nav__logo'>Fran</h1> */}
+        <div className='logo'>
+          <img className='nav__logo' src={fran_logo} alt="logo" />
+          <span>Francisco Navarro</span>
+        </div>
         <label className='nav__label' htmlFor="menu" >
           <img className='nav__img' src={menu} alt="no hay imagen" />
         </label>

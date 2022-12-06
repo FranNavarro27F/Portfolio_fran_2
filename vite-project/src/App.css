@@ -1,3 +1,5 @@
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -97,7 +99,7 @@ Variables CSS
 
 
 
-/* Mobile menu */
+/*--- Mobile menu ---*/
 .nav{
   position: fixed;
   display: flex;
@@ -106,6 +108,21 @@ Variables CSS
   min-height: 4.125rem;
   width: 100vw;
 }
+/* -- logo -- */
+.logo{
+  display: flex;
+  /* background-color: #3f4343; */
+}
+.logo span{
+  color: #E9FBFC;
+  font-family: Nunito;
+  font-size: 12px;
+}
+.nav__logo{
+  height: 1.5625rem;
+  border-radius: 1rem;
+}
+/* --/ logo-- */
 
 .nav__input:checked + .nav__menu{
   /* background-color: tomato; */
@@ -177,7 +194,7 @@ Variables CSS
   }
 
 }
-/* ----------- */
+/* -----/ Mobile Menu------ */
 
 
  .gridContainter{
@@ -189,8 +206,6 @@ Variables CSS
   /* grid-template-columns: repeat(12, 1fr); */
   grid-template-rows: 1fr;
   grid-column-gap: 16px;
-
-
  }
 
  .NavBar{

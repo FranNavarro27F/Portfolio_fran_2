@@ -97,6 +97,89 @@ Variables CSS
 
 
 
+/* Mobile menu */
+.nav{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: var(--Color-Neutral-9);
+  min-height: 4.125rem;
+  width: 100vw;
+}
+
+.nav__input:checked + .nav__menu{
+  /* background-color: tomato; */
+}
+
+.nav__container{
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__label, .nav__input{
+  display: none;
+}
+
+.nav__menu{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+}
+
+
+.nav__item{
+  color: var(--Color-Second-0);
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  
+}
+.nav__item::after{
+  content: "";
+  display: block;
+  background-color: var(--Color-Second-0);
+  width: 90%;
+  margin-top: 0.1875rem;
+  height: 0.1875rem;
+  clip-path: var(--clippy);
+  transition: clip-path .3s;
+}
+.nav__item:hover{
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 700px) {
+  .nav__label{
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu{
+    position: fixed;
+    top: 5rem;
+    bottom: 0;
+    background-color: var(--Color-Neutral-9);
+    width: 100vw;
+    height: 40vh;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path 1s;
+
+  }
+  .nav__input:checked + .nav__menu{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+
+}
+/* ----------- */
+
+
  .gridContainter{
   /* height: 100vh; */
   /* width: 100vw; */

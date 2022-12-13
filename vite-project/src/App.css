@@ -105,16 +105,27 @@ Variables CSS
   background-color: var(--Color-Neutral-9);
   min-height: 4.125rem;
   width: 100vw;
+} div.light .nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: var(--Color-Neutral-1);
+    min-height: 4.125rem;
+    width: 100vw;
 }
+
 /* -- <logo> -- */
 .logo{
   display: flex;
-  /* background-color: #3f4343; */
 }
 .logo span{
-  color: #E9FBFC;
+  color: var(--Color-Second-0);
   font-family: Nunito;
   font-size: 12px;
+} div.light .logo span{
+    color: var(--Color-Primary-9);
+    font-family: Nunito;
+    font-size: 12px;
 }
 .nav__logo{
   height: 1.5625rem;
@@ -122,11 +133,15 @@ Variables CSS
 }
 /* --</logo>-- */
 
-.nav__input:checked + .nav__menu{
-  /* background-color: tomato; */
+/* .nav__input:checked + .nav__menu{
+  background-color: tomato;
+} */
+.nav__img svg{
+ background-color:var(--Color-Primary-9);
 }
 
 .nav__container{
+  /* background-color: #62E2EA; */
   display: flex;
   height: 100%;
   width: 90%;
@@ -142,6 +157,7 @@ Variables CSS
 .nav__menu{
   display: grid;
   grid-auto-flow: column;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -150,7 +166,8 @@ Variables CSS
   color: var(--Color-Second-0);
   text-decoration: none;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  
+}div.light .nav__item{
+  color: var(--Color-Primary-9)
 }
 .nav__item::after{
   content: "";
@@ -161,12 +178,14 @@ Variables CSS
   height: 0.1875rem;
   clip-path: var(--clippy);
   transition: clip-path .3s;
+}div.light .nav__item::after{
+  background-color: var(--Color-Neutral-9);
 }
 .nav__item:hover{
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 855px) {
   .nav__label{
     display: block;
     cursor: pointer;
@@ -183,17 +202,22 @@ Variables CSS
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: clip-path 1s;
-
-  }
+  }div.light .nav__menu{
+      background-color: var(--Color-Neutral-1) ;
+    }
   .nav__input:checked + .nav__menu{
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+  .language_and_light-dark{
+
   }
 }
 /* <light & dark mode> */
 .language{
-  background-color: #ecf5f6;
+  /* background-color: #ecf5f6; */
   width: 5rem;
   height: 3rem;
   display: flex;
@@ -207,8 +231,8 @@ Variables CSS
 }
 
 .language_and_light-dark{
-  background-color: #35DAE4;
-  width: 8rem;
+  /* background-color: #35DAE4; */
+  width: 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -254,19 +278,17 @@ Variables CSS
   left: 0;
 }
 /* </ light & dark mode> */
-
 /* -----</ Mobile Menu>------ */
 
 
  .gridContainter{
-  /* height: 100vh; */
-  /* width: 100vw; */
   background-color: var(--Color-Primary-9);
-
   display: grid;
-  /* grid-template-columns: repeat(12, 1fr); */
   grid-template-rows: 1fr;
-  grid-column-gap: 16px;
+  grid-column-gap: 1rem;
+ }
+ div.light .gridContainter{
+  background-color: var(--Color-Primary-0);
  }
 
 
@@ -277,30 +299,47 @@ Variables CSS
   margin-top: 6.1875rem;
   margin-bottom: 84px;
   /* height: 18.375rem; */
- }
+ }div.light .Header{
+ background-color: var(--Color-Primary-0);
+ color: var(--Color-Primary-9);
+  
+}
  .About_me{
   background-color: var(--Color-Primary-9);
   border-style: solid;
   height: 24.5625rem;
   margin-bottom: 5.25rem;
-
- }
+ }div.light .About_me{
+  background-color: var(--Color-Primary-0);
+  color: var(--Color-Primary-9);
+  font-family: Nunito;
+  font-size: 12px;
+}
  .Skills{
   background-color: var(--Color-Primary-9);
   border-style: solid;
   height: 52.125rem;
   margin-bottom: 6.5625rem;
+ }div.light .Skills{
+  background-color: var(--Color-Primary-0);
+  color: var(--Color-Primary-9);
  }
  .My_projects{
   background-color: var(--Color-Primary-9);
   border-style: solid;
   height: 58.125rem;
   margin-bottom: 4.4375rem;
+ }div.light .My_projects{
+  background-color: var(--Color-Primary-0);
+  color: var(--Color-Primary-9);
  }
  .Footer{
   background-color: var(--Color-Primary-9);
   border-style: solid;
   height: 11.875rem;
+ }div.light .Footer{
+  background-color: var(--Color-Primary-0);
+  color: var(--Color-Primary-9);
  }
 
 

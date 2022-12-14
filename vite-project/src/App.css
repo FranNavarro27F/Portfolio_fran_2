@@ -185,7 +185,35 @@ Variables CSS
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-@media (max-width: 855px) {
+/* <Language> */
+.language{
+  /* background-color: #ecf5f6; */
+  width: 15vw;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.language button{
+  border: none;
+  
+}
+.language-switch{
+  display: flex;
+  justify-content: space-between;
+  width: 3rem;
+}
+
+.language_and_light-dark{
+  width: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* </Language> */
+
+@media (max-width: 990px) {
   .nav__label{
     display: block;
     cursor: pointer;
@@ -208,36 +236,20 @@ Variables CSS
   }div.light .nav__menu{
       background-color: var(--Color-Neutral-1) ;
     }
-  .nav__input:checked + .nav__menu{
+.nav__input:checked + .nav__menu{
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   }
-  .language_and_light-dark{
-
+.language_and_light-dark{
+    /* background-color: #35DAE4; */
+    height: 6rem;
+    width: 60vw;
   }
+.language{
+  /* background-color: #094043; */
+  min-width: 6rem;
+}
 }
 /* <light & dark mode> */
-.language{
-  /* background-color: #ecf5f6; */
-  width: 5rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.language-switch{
-  display: flex;
-  justify-content: space-between;
-  width: 3rem;
-}
-
-.language_and_light-dark{
-  /* background-color: #35DAE4; */
-  width: 9rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .switch{
   background-color:orange;
   border-radius: 1000px;
@@ -276,6 +288,14 @@ Variables CSS
 .switch.active::after{
   right: unset;
   left: 0;
+}
+.light-dark{
+  height: 3rem;
+  width: 12.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 /* </ light & dark mode> */
 /* -----</ Mobile Menu>------ */

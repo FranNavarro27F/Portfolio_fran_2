@@ -8,15 +8,9 @@
 
 #root {
   margin: 0;
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  /* text-align: center; */
- 
 /* ---------------------------------------------------------------
 Variables CSS
 */
-
 
 /* Primary Colors */
 --Color-Primary-0: #FCEAE9;
@@ -30,7 +24,6 @@ Variables CSS
 --Color-Primary-8: #430C09;
 --Color-Primary-9: #160403;
 
-
 /* Secondary Colors */
 --Color-Second-0: #E9FBFC;
 --Color-Second-1: #BCF3F6;
@@ -42,7 +35,6 @@ Variables CSS
 --Color-Second-7: #0F6B70;
 --Color-Second-8: #094043;
 --Color-Second-9: #031516;
-
 
 /* Neutral Colors */
 --Color-Neutral-0: #F3F2F2;
@@ -94,7 +86,6 @@ Variables CSS
 --texto-7-bolt: 700 0.5625rem/normal PT Sans;  */ 
 /* --------------------------------------------------------------- */
 }
-
 
 
 /*--- <Mobile menu> ---*/

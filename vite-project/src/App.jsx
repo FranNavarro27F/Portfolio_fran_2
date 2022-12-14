@@ -21,12 +21,10 @@ function App() {
   const handleMode= ()=> {
     mode === "dark" ? setMode("light") : setMode("dark");
   }
-  
 
   const button_Dark_Light_ref= useRef(null);
   const dark_light_active_ref= useRef(null);
  
-
   const switch_mode= ()=> {
     if(button_Dark_Light_ref.current.className === ""){
       button_Dark_Light_ref.current.className = "light"
@@ -87,7 +85,6 @@ function App() {
                     id='switch'
                     className='switch'
                     onClick={switch_mode}
-                    
                     ref={dark_light_active_ref}
                     >
                     <span><img src={sun} alt="sun" /></span>

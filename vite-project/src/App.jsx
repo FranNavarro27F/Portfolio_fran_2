@@ -58,28 +58,28 @@ function App() {
       <div className='gridContainter'>
 
         <nav className='nav'>
-          <div className='nav__container'>
-            {/* <h1 className='nav__logo'>Fran</h1> */}
+
+          <div className='nav__container__logo'>
             <div className='logo'>
               <img className='nav__logo' src={logos} alt="logo" />
               <span>Francisco Navarro</span>
             </div>
-            <label className='nav__label' htmlFor="menu" >
-              <img className='nav__img' src={ mode === "dark" ? "/menu.svg" : "/menu_light.svg"} alt="img_menu" />
-            </label>
+          </div>
+
+          <div className='nav__container__lang-and-dark'>
+            <div className='language'>
+              <div>
+                <button onClick={()=> language.establecerLenguaje('en-US')}>
+                  <img src={eng_flag} alt="United Kingdom" />
+                </button>
+              </div>
+              <div>
+                <button onClick={()=> language.establecerLenguaje('es-MX')}>
+                  <img src={spa_flag} alt="España" />
+                </button>
+              </div>
+            </div>
             <input className='nav__input' type='checkbox' id='menu' />
-
-
-            <div className='nav__menu'>
-              <div className='language_and_light-dark'>
-                <div className='language'>
-                  <button onClick={()=> language.establecerLenguaje('en-US')}>
-                    <img src={eng_flag} alt="United Kingdom" />
-                  </button>
-                  <button onClick={()=> language.establecerLenguaje('es-MX')}>
-                    <img src={spa_flag} alt="España" />
-                  </button>
-                </div>
                 <div className='light-dark'>
                   <button
                     id='switch'
@@ -91,7 +91,10 @@ function App() {
                   <span><img src={moon} alt="moon" /></span>
                   </button>
                 </div>
-              </div>
+          </div>
+
+          <div className='nav__container__navs'>
+            <div className='nav__menu'>
               <a className='nav__item' href='#'>
                 <FormattedMessage
                   id= 'app.nav_menu_1'
@@ -123,9 +126,8 @@ function App() {
                 />
               </a>
             </div>
-            
-
           </div>
+
         </nav>
 
 

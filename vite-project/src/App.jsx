@@ -21,10 +21,10 @@ function App() {
   const handleMode= ()=> {
     mode === "dark" ? setMode("light") : setMode("dark");
   }
-
   const button_Dark_Light_ref= useRef(null);
   const dark_light_active_ref= useRef(null);
  
+
   const switch_mode= ()=> {
     if(button_Dark_Light_ref.current.className === ""){
       button_Dark_Light_ref.current.className = "light"
@@ -33,13 +33,11 @@ function App() {
     }else if(button_Dark_Light_ref.current.className === "dark"){
       button_Dark_Light_ref.current.className= "light"
     }
-
     if(mode === "dark"){
        setMode("light")
     }else if(mode === "light"){
       setMode("dark")
     }
-
     if(dark_light_active_ref.current.className === "switch"){
       dark_light_active_ref.current.className= "switch active";
       return;
@@ -48,7 +46,6 @@ function App() {
       dark_light_active_ref.current.className= "switch";
       return;
     }
-
   };
 
 
@@ -66,35 +63,46 @@ function App() {
             </div>
           </div>
 
-          <div className='nav__container__lang-and-dark'>
-            <div className='language'>
-              <div>
-                <button onClick={()=> language.establecerLenguaje('en-US')}>
-                  <img src={eng_flag} alt="United Kingdom" />
-                </button>
-              </div>
-              <div>
-                <button onClick={()=> language.establecerLenguaje('es-MX')}>
-                  <img src={spa_flag} alt="España" />
-                </button>
-              </div>
-            </div>
-            <input className='nav__input' type='checkbox' id='menu' />
-                <div className='light-dark'>
-                  <button
-                    id='switch'
-                    className='switch'
-                    onClick={switch_mode}
-                    ref={dark_light_active_ref}
-                    >
-                    <span><img src={sun} alt="sun" /></span>
-                  <span><img src={moon} alt="moon" /></span>
-                  </button>
-                </div>
-          </div>
-
-          <div className='nav__container__navs'>
+          <div className='nav__img__menu'>
+            <label className='nav__label' htmlFor="menu" >
+              <img 
+                className='nav__img'
+                src={ mode === "dark" ? "/menu.svg" : "/menu_light.svg"}
+                alt="img_menu"
+                />
+            </label>
+            <input 
+              className='nav__input'
+              type='checkbox'
+              id='menu'
+              onClick={()=> handleMobileMenu()}
+              />
             <div className='nav__menu'>
+              <div className='nav__container__lang-and-dark'>
+                <div className='language'>
+                  <div>
+                    <button onClick={()=> language.establecerLenguaje('en-US')}>
+                      <img src={eng_flag} alt="United Kingdom" />
+                    </button>
+                  </div>
+                  <div>
+                    <button onClick={()=> language.establecerLenguaje('es-MX')}>
+                      <img src={spa_flag} alt="España" />
+                    </button>
+                  </div>
+                </div>
+                  <div className='light-dark'>
+                    <button
+                      id='switch'
+                      className='switch'
+                      onClick={switch_mode}
+                      ref={dark_light_active_ref}
+                      >
+                      <span><img src={sun} alt="sun" /></span>
+                    <span><img src={moon} alt="moon" /></span>
+                    </button>
+                  </div>
+              </div>
               <a className='nav__item' href='#'>
                 <FormattedMessage
                   id= 'app.nav_menu_1'

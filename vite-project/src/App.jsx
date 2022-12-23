@@ -21,10 +21,10 @@ function App() {
   const handleMode= ()=> {
     mode === "dark" ? setMode("light") : setMode("dark");
   }
-
   const button_Dark_Light_ref= useRef(null);
   const dark_light_active_ref= useRef(null);
  
+
   const switch_mode= ()=> {
     if(button_Dark_Light_ref.current.className === ""){
       button_Dark_Light_ref.current.className = "light"
@@ -33,13 +33,11 @@ function App() {
     }else if(button_Dark_Light_ref.current.className === "dark"){
       button_Dark_Light_ref.current.className= "light"
     }
-
     if(mode === "dark"){
        setMode("light")
     }else if(mode === "light"){
       setMode("dark")
     }
-
     if(dark_light_active_ref.current.className === "switch"){
       dark_light_active_ref.current.className= "switch active";
       return;
@@ -48,7 +46,6 @@ function App() {
       dark_light_active_ref.current.className= "switch";
       return;
     }
-
   };
 
 
@@ -58,74 +55,99 @@ function App() {
       <div className='gridContainter'>
 
         <nav className='nav'>
-          <div className='nav__container'>
-            {/* <h1 className='nav__logo'>Fran</h1> */}
+
+          <div className='nav__container__logo'>
             <div className='logo'>
               <img className='nav__logo' src={logos} alt="logo" />
               <span>Francisco Navarro</span>
             </div>
+          </div>
+
+          <div className='nav__img__menu'>
             <label className='nav__label' htmlFor="menu" >
-              <img className='nav__img' src={ mode === "dark" ? "/menu.svg" : "/menu_light.svg"} alt="img_menu" />
+              <img 
+                className='nav__img'
+                src={ mode === "dark" ? "/menu.svg" : "/menu_light.svg"}
+                alt="img_menu"
+                />
             </label>
-            <input className='nav__input' type='checkbox' id='menu' />
-
-
+            <input 
+              className='nav__input'
+              type='checkbox'
+              id='menu'
+              // onClick={()=> handleMobileMenu()}
+              />
             <div className='nav__menu'>
-              <div className='language_and_light-dark'>
-                <div className='language'>
-                  <button onClick={()=> language.establecerLenguaje('en-US')}>
-                    <img src={eng_flag} alt="United Kingdom" />
-                  </button>
-                  <button onClick={()=> language.establecerLenguaje('es-MX')}>
-                    <img src={spa_flag} alt="España" />
-                  </button>
-                </div>
-                <div className='light-dark'>
-                  <button
-                    id='switch'
-                    className='switch'
-                    onClick={switch_mode}
-                    ref={dark_light_active_ref}
-                    >
-                    <span><img src={sun} alt="sun" /></span>
-                  <span><img src={moon} alt="moon" /></span>
-                  </button>
+              <div className='center__light'>
+                <div className='nav__container__lang-and-dark'>
+                    <div className='light-dark'>
+                      <button
+                        id='switch'
+                        className='switch'
+                        onClick={switch_mode}
+                        ref={dark_light_active_ref}
+                        >
+                        <span><img src={sun} alt="sun" /></span>
+                      <span><img src={moon} alt="moon" /></span>
+                      </button>
+                    </div>
+                  <div className='language'>
+                    <div>
+                      <button onClick={()=> language.establecerLenguaje('en-US')}>
+                        <img src={eng_flag} alt="United Kingdom" />
+                      </button>
+                    </div>
+                    <div>
+                      <button onClick={()=> language.establecerLenguaje('es-MX')}>
+                        <img src={spa_flag} alt="España" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <a className='nav__item' href='#'>
-                <FormattedMessage
-                  id= 'app.nav_menu_1'
-                  defaultMessage= 'Home'
-                />
-              </a>
-              <a className='nav__item' href='#About_me'>
-                <FormattedMessage
-                  id= 'app.nav_menu_2'
-                  defaultMessage= 'About Me'
-                />
-              </a>
-              <a className='nav__item' href='#Skills'>
-                <FormattedMessage
-                  id= 'app.nav_menu_3'
-                  defaultMessage= 'Skills'
-                />
-              </a>
-              <a className='nav__item' href='#My_projects'>
-                <FormattedMessage
-                  id= 'app.nav_menu_4'
-                  defaultMessage= 'My Projects'
-                />
-              </a>
-              <a className='nav__item' href='#Footer'>
-                <FormattedMessage
-                  id= 'app.nav_menu_5'
-                  defaultMessage= 'Get in Touch'
-                />
-              </a>
+              <div id='div_link_1' className='div_link_g'>
+                <a className='nav__item' href='#' id='link_1'>
+                  <FormattedMessage
+                    id= 'app.nav_menu_1'
+                    defaultMessage= 'Home'
+                  />
+                </a>
+              </div>
+              <dir id='div_link_2' className='div_link_g'>
+                <a className='nav__item' href='#About_me' id='link_2'>
+                  <FormattedMessage
+                    id= 'app.nav_menu_2'
+                    defaultMessage= 'About Me'
+                  />
+                </a>
+              </dir>
+              <div id='div_link_3' className='div_link_g'>
+                <a className='nav__item' href='#Skills' id='link_3'>
+                  <FormattedMessage
+                    id= 'app.nav_menu_3'
+                    defaultMessage= 'Skills'
+                  />
+                </a>
+              </div>
+              <div id='div_link_4' className='div_link_g'>
+                <a className='nav__item' href='#My_projects' id='link_4'>
+                  <FormattedMessage
+                    id= 'app.nav_menu_4'
+                    defaultMessage= 'My Projects'
+                  />
+                </a>
+              </div>
+              <div id='div_link_5' className='div_link_g'>
+                <a className='nav__item' href='#Footer' id='link_5'>
+                  <FormattedMessage
+                    id= 'app.nav_menu_5'
+                    defaultMessage= 'Get in Touch'
+                  />
+                </a>
+              </div>
             </div>
-            
-
           </div>
+
         </nav>
 
 

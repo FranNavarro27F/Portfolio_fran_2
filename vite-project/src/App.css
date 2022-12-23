@@ -190,7 +190,7 @@ Variables CSS
    min-width: 6rem;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 350px) {
  .nav__container__lang-and-dark{
   /* background-color: #15969D; */
   display: flex;

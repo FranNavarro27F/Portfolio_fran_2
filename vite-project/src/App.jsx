@@ -75,11 +75,22 @@ function App() {
               className='nav__input'
               type='checkbox'
               id='menu'
-              onClick={()=> handleMobileMenu()}
+              // onClick={()=> handleMobileMenu()}
               />
             <div className='nav__menu'>
               <div className='center__light'>
                 <div className='nav__container__lang-and-dark'>
+                    <div className='light-dark'>
+                      <button
+                        id='switch'
+                        className='switch'
+                        onClick={switch_mode}
+                        ref={dark_light_active_ref}
+                        >
+                        <span><img src={sun} alt="sun" /></span>
+                      <span><img src={moon} alt="moon" /></span>
+                      </button>
+                    </div>
                   <div className='language'>
                     <div>
                       <button onClick={()=> language.establecerLenguaje('en-US')}>
@@ -92,17 +103,6 @@ function App() {
                       </button>
                     </div>
                   </div>
-                    <div className='light-dark'>
-                      <button
-                        id='switch'
-                        className='switch'
-                        onClick={switch_mode}
-                        ref={dark_light_active_ref}
-                        >
-                        <span><img src={sun} alt="sun" /></span>
-                      <span><img src={moon} alt="moon" /></span>
-                      </button>
-                    </div>
                 </div>
               </div>
               <div id='div_link_1' className='div_link_g'>

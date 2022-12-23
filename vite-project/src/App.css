@@ -47,52 +47,13 @@ Variables CSS
 --Color-Neutral-7: #433D3D;
 --Color-Neutral-8: #282424;
 --Color-Neutral-9: #0D0C0C;
-
-
-/* Primary Fonts */
-/* --Font-Titles-0: font-family: 'Nunito', sans-serif; */
-/* 
---titulos-1: 400 3.1875rem/8.124999701976776rem Nunito; 
---titulos-1-bolt: extrabold 3.1875rem/8.124999701976776rem Nunito; 
---titulos-2: 400 2.375rem/8.124999701976776rem Nunito; 
---titulos-2-bolt: extrabold 2.375rem/8.124999701976776rem Nunito; 
---titulos-3: 400 1.75rem/8.124999701976776rem Nunito; 
---titulos-3-bolt: 700 1.75rem/8.124999701976776rem Nunito; 
---titulos-4: 400 1.3125rem/8.124999701976776rem Nunito; 
---titulos-4-bolt: 700 1.3125rem/8.124999701976776rem Nunito; 
---titulos-5: 400 1rem/8.124999701976776rem Nunito; 
---titulos-5-bolt: 700 1rem/8.124999701976776rem Nunito; 
---titulos-6: 400 0.75rem/10.9375rem Nunito; 
---titulos-6-bolt: 700 0.75rem/10.9375rem Nunito; 
---titulos-7-bolt: 700 0.5625rem/normal Nunito; 
---titulos-7: 400 0.5625rem/normal Nunito; 
-
-/* --texto-1: 400 3.1875rem/normal PT Sans;  */
-/* --texto-1: PT Sans;  */
-/* --texto-1-bolt: 700 3.1875rem/normal PT Sans;  */
-/* --texto-1-bolt: PT Sans bold;
-
---texto-2: 400 2.375rem/normal PT Sans; 
---texto-2-bolt: 700 2.375rem/normal PT Sans; 
---texto-3: 400 1.75rem/normal PT Sans; 
---texto-3-bolt: 700 1.75rem/normal PT Sans; 
---texto-4: 400 1.3125rem/normal PT Sans; 
---texto-4-bolt: 700 1.3125rem/normal PT Sans; 
---texto-5: 400 1rem/10.9375rem PT Sans; 
---texto-5-bolt: 700 1rem/10.9375rem PT Sans; 
---texto-6: 400 0.75rem/normal PT Sans; 
---texto-6-bolt: 700 0.75rem/normal PT Sans; 
---texto-7: 400 0.5625rem/normal PT Sans; 
---texto-7-bolt: 700 0.5625rem/normal PT Sans;  */ 
-/* --------------------------------------------------------------- */
 }
 
 
 .nav{
   position: fixed;
   display: grid;
-  /* grid-template-columns: 20% 25% auto; */
-  grid-template-columns:40% auto;
+  grid-template-columns:3fr 1fr;
   gap: 0.625rem;
   background-color: var(--Color-Neutral-9);
   /* min-height: 4.125rem; */
@@ -111,13 +72,14 @@ Variables CSS
       margin-left: 1rem;
     }
   .nav__container__lang-and-dark{
-    /* background-color: #b34a45; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
-    height: 10vh;
+    justify-content:space-evenly;
+    height: 16vh;
     width: 30vw;
+    /* background-color: #094043; */
+
     /* display: none; */
   }
   .nav__img__menu{
@@ -130,7 +92,6 @@ Variables CSS
   }
   
   /*--- <Mobile menu> ---*/
-
 /* -- <logo> -- */
 .logo span{
   color: var(--Color-Second-0);
@@ -155,7 +116,7 @@ Variables CSS
   color: var(--Color-Second-0);
   text-decoration: none;
   font-family: "Nunito";
-  font-size: 1.31rem;
+  font-size: 1rem;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }div.light .nav__item{
   color: var(--Color-Primary-9);
@@ -180,7 +141,7 @@ Variables CSS
 /* <Language> */
 .language{
   /* background-color: #ecf5f6; */
-  width: 7rem;
+  min-width: 3rem;
   height: 3rem;
   display: flex;
   justify-content: space-between;
@@ -189,6 +150,9 @@ Variables CSS
 .language button{
   border: none;
 }
+.language button img{
+  height: 1.4rem;
+}
 .language-switch{
   display: flex;
   justify-content: space-between;
@@ -196,7 +160,7 @@ Variables CSS
 }
 /* </Language> */
 
-@media (max-width: 700px) {
+@media (max-width: 700px){
   /* < 700px = Mobile */
   .nav__label{
     display: block;
@@ -208,7 +172,7 @@ Variables CSS
     bottom: 0;
     background-color: var(--Color-Neutral-9);
     width: 100vw;
-    height: 55vh;
+    height: 60vh;
     left: 0;
     display: flex;
     justify-content: space-evenly;
@@ -250,9 +214,6 @@ Variables CSS
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     align-items: center;
-    
-    gap: 1rem;
-  
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: clip-path 1s;
   }div.light .nav__menu{
@@ -310,7 +271,47 @@ Variables CSS
     display: flex;
     justify-content: center;
   }
- 
+}
+@media (min-width: 1100px) {
+  .nav__menu{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .nav{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+  }
+  .nav__img{
+    display: none;
+  }
+  .nav__menu{
+    background-color: var(--Color-Neutral-9);
+    position: fixed;
+    top: 0rem;
+    left: 15vw;
+    width: 84vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly
+  }div.light .nav__menu{
+      background-color: var(--Color-Second-0) ;
+    }
+    .light-dark{
+      /* background-color: #35DAE4; */
+      height: 2rem;
+      width: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .nav__container__lang-and-dark{
+      display: flex;
+      justify-content: space-between;
+      width: 17vw;
+      height: 4rem;
+    }
+  .language button img{
+    height: 1.4rem;
+  }
 }
 
 /* <light & dark mode> */
@@ -374,7 +375,6 @@ Variables CSS
  div.light .gridContainter{
   background-color: var(--Color-Neutral-0);
  }
-
 
  .Header{
   background-color: var(--Color-Primary-9);

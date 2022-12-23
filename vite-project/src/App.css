@@ -149,6 +149,7 @@ Variables CSS
 }
 .language button{
   border: none;
+  cursor: pointer;
 }
 .language button img{
   height: 1.4rem;

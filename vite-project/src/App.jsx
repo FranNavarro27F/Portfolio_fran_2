@@ -15,6 +15,7 @@ function App() {
 
   let language= useContext(langContext);
 
+  let [close_flag, setClose_flag]= useState(false);
   let [mode, setMode]= useState("dark");
   let logos= mode === "dark" ? fran_logo_claro : fran_logo_negro;
 
@@ -23,6 +24,7 @@ function App() {
   }
   const button_Dark_Light_ref= useRef(null);
   const dark_light_active_ref= useRef(null);
+  
  
 
   const switch_mode= ()=> {
@@ -47,7 +49,12 @@ function App() {
       return;
     }
   };
-
+ 
+  const handlerCloseMenu= ()=> {
+    close_flag === true ? setClose_flag(false) : setClose_flag(true); 
+    // setClose_flag(true);
+    
+  }
 
   return (
     
@@ -69,19 +76,21 @@ function App() {
                 className='nav__img'
                 src={ mode === "dark" ? "/menu.svg" : "/menu_light.svg"}
                 alt="img_menu"
+                onClick={()=> handlerCloseMenu()}
                 />
             </label>
             <input 
               className='nav__input'
               type='checkbox'
               id='menu'
-              // onClick={()=> handleMobileMenu()}
+              // defaultChecked={close_flag}
+              checked={close_flag}
               />
             <div className='nav__menu'>
               <div className='center__light'>
                 <div className='nav__container__lang-and-dark'>
                     <div className='light-dark'>
-                      <button
+                      <button 
                         id='switch'
                         className='switch'
                         onClick={switch_mode}
@@ -106,7 +115,12 @@ function App() {
                 </div>
               </div>
               <div id='div_link_1' className='div_link_g'>
-                <a className='nav__item' href='#' id='link_1'>
+                <a 
+                  className='nav__item'
+                  href='#Header'
+                  id='link_1'
+                  onClick={()=> handlerCloseMenu()}
+                  >
                   <FormattedMessage
                     id= 'app.nav_menu_1'
                     defaultMessage= 'Home'
@@ -114,7 +128,12 @@ function App() {
                 </a>
               </div>
               <dir id='div_link_2' className='div_link_g'>
-                <a className='nav__item' href='#About_me' id='link_2'>
+                <a 
+                  className='nav__item'
+                  href='#About_me'
+                  id='link_2'
+                  onClick={()=> handlerCloseMenu()}
+                  >
                   <FormattedMessage
                     id= 'app.nav_menu_2'
                     defaultMessage= 'About Me'
@@ -122,7 +141,12 @@ function App() {
                 </a>
               </dir>
               <div id='div_link_3' className='div_link_g'>
-                <a className='nav__item' href='#Skills' id='link_3'>
+                <a 
+                  className='nav__item'
+                  href='#Skills'
+                  id='link_3'
+                  onClick={()=> handlerCloseMenu()}
+                  >
                   <FormattedMessage
                     id= 'app.nav_menu_3'
                     defaultMessage= 'Skills'
@@ -130,7 +154,12 @@ function App() {
                 </a>
               </div>
               <div id='div_link_4' className='div_link_g'>
-                <a className='nav__item' href='#My_projects' id='link_4'>
+                <a
+                  className='nav__item'
+                  href='#My_projects'
+                  id='link_4'
+                  onClick={()=> handlerCloseMenu()}
+                  >
                   <FormattedMessage
                     id= 'app.nav_menu_4'
                     defaultMessage= 'My Projects'
@@ -138,7 +167,12 @@ function App() {
                 </a>
               </div>
               <div id='div_link_5' className='div_link_g'>
-                <a className='nav__item' href='#Footer' id='link_5'>
+                <a
+                  className='nav__item'
+                  href='#Footer'
+                  id='link_5'
+                  onClick={()=> handlerCloseMenu()}
+                  >
                   <FormattedMessage
                     id= 'app.nav_menu_5'
                     defaultMessage= 'Get in Touch'
@@ -152,29 +186,29 @@ function App() {
 
 
         <a name='Home'></a>
-        <div className='Header'>
+        <section className='Header' id='Header'>
           <h1>Header</h1>
-        </div>
+        </section>
 
         <a name='About_me'></a>
-        <div className='About_me'>
+        <section className='About_me' id='About_me'>
           <h1>Abut me</h1>
-        </div>
+        </section>
 
         <a name='Skills'></a>
-        <div className='Skills'>
+        <section className='Skills' id='Skills'>
           <h1>Skills</h1>
-        </div>
+        </section>
 
         <a name='My_projects'></a>
-        <div className='My_projects'>
+        <section className='My_projects' id='My_projects'>
           <h1>My projects</h1>
-        </div>
+        </section>
 
         <a name='Footer'></a>
-        <div className='Footer'>
+        <section className='Footer' id='Footer'>
           <h1>Footer</h1>
-        </div>
+        </section>
 
 
       </div>

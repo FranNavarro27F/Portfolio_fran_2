@@ -56,18 +56,15 @@ Variables CSS
   grid-template-columns:3fr 1fr;
   gap: 0.625rem;
   background-color: var(--Color-Neutral-9);
-  /* min-height: 4.125rem; */
   height: 4.125rem;
   width: 100vw;
 } div.light .nav{
     background-color: var(--Color-Second-0);
 }
   .nav__container__logo{
-    /* background-color: #1BC1CA; */
     display: flex;
     align-items: center;
   } .nav__container__logo .logo{
-      /* background-color: #187e83; */
       display: flex;
       margin-left: 1rem;
     }
@@ -78,12 +75,8 @@ Variables CSS
     justify-content:space-evenly;
     height: 16vh;
     width: 30vw;
-    /* background-color: #094043; */
-
-    /* display: none; */
   }
   .nav__img__menu{
-    /* background-color: #433D3D; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -91,8 +84,8 @@ Variables CSS
     margin-right: 1rem;
   }
   
-  /*--- <Mobile menu> ---*/
-/* -- <logo> -- */
+/*--- <Mobile menu> ---*/
+  /* -- <logo> -- */
 .logo span{
   color: var(--Color-Second-0);
   font-family: "Nunito";
@@ -103,8 +96,7 @@ Variables CSS
 .nav__logo{
   height: 1.5625rem;
   border-radius: 1rem;
-}
-/* --</logo>-- */
+}/* --</logo>-- */
 
 .nav__img svg{
  background-color:var(--Color-Primary-9);
@@ -112,17 +104,18 @@ Variables CSS
 .nav__label, .nav__input{
   display: none;
 }
-.nav__item{
+.div_link_g a{
   color: var(--Color-Second-0);
   text-decoration: none;
   font-family: "Nunito";
   font-size: 1rem;
+  position: relative;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-}div.light .nav__item{
+}div.light .div_link_g a{
   color: var(--Color-Primary-9);
   font-family: "Nunito";
 }
-.nav__item::after{
+.div_link_g a::after{
   content: "";
   display: block;
   background-color: var(--Color-Second-0);
@@ -131,11 +124,14 @@ Variables CSS
   height: 0.1875rem;
   clip-path: var(--clippy);
   transition: clip-path .3s;
-}div.light .nav__item::after{
+}div.light .div_link_g a::after{
   background-color: var(--Color-Neutral-9);
 }
-.nav__item:hover{
+.div_link_g a:hover{
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.div_link_g a.nav__item__active::after{
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%)
 }
 
 /* <Language> */

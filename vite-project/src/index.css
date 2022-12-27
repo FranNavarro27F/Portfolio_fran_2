@@ -22,3 +22,16 @@ html {
 section[id] {
   scroll-margin-top: 70px;
 }
+
+.observer-root-margin {
+  pointer-events: none;
+  z-index: 1000;
+  /* border: 4px solid blue; */
+
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+
+}

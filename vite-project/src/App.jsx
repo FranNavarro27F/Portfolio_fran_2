@@ -53,12 +53,36 @@ function App() {
   const handlerCloseMenu= ()=> {
     close_flag === true ? setClose_flag(false) : setClose_flag(true); 
     // setClose_flag(true);
-    
   }
+
+  const menuLinks= document.querySelectorAll('.div_link_g a[href^="#"]');
+
+  const observer= new IntersectionObserver((entries)=>{
+    entries.forEach(entry => {
+      const id= entry.target.getAttribute("id");
+      const menuLink= document.querySelector(`.div_link_g a[href="#${id}"]`);
+
+      if(entry.isIntersecting){
+        document.querySelector('.div_link_g a.nav__item__active')?.classList?.remove("nav__item__active");
+        menuLink.classList.add("nav__item__active");
+      }else{
+        menuLink.classList.remove("nav__item__active");
+      }
+    });
+  }, {rootMargin: "-50% 0px -50% 0px"});
+
+  menuLinks.forEach(menuLink => {
+    const hash= menuLink.getAttribute("href");
+    const target= document.querySelector(hash);
+    if(target){
+      observer.observe(target);
+    }
+  });
 
   return (
     
     <div ref={button_Dark_Light_ref}>
+      <div className='observer-root-margin'></div>
       <div className='gridContainter'>
 
         <nav className='nav'>
@@ -114,9 +138,9 @@ function App() {
                   </div>
                 </div>
               </div>
+              
               <div id='div_link_1' className='div_link_g'>
                 <a 
-                  className='nav__item'
                   href='#Header'
                   id='link_1'
                   onClick={()=> handlerCloseMenu()}
@@ -129,7 +153,6 @@ function App() {
               </div>
               <dir id='div_link_2' className='div_link_g'>
                 <a 
-                  className='nav__item'
                   href='#About_me'
                   id='link_2'
                   onClick={()=> handlerCloseMenu()}
@@ -142,7 +165,6 @@ function App() {
               </dir>
               <div id='div_link_3' className='div_link_g'>
                 <a 
-                  className='nav__item'
                   href='#Skills'
                   id='link_3'
                   onClick={()=> handlerCloseMenu()}
@@ -155,7 +177,6 @@ function App() {
               </div>
               <div id='div_link_4' className='div_link_g'>
                 <a
-                  className='nav__item'
                   href='#My_projects'
                   id='link_4'
                   onClick={()=> handlerCloseMenu()}
@@ -168,7 +189,6 @@ function App() {
               </div>
               <div id='div_link_5' className='div_link_g'>
                 <a
-                  className='nav__item'
                   href='#Footer'
                   id='link_5'
                   onClick={()=> handlerCloseMenu()}
@@ -185,27 +205,27 @@ function App() {
         </nav>
 
 
-        <a name='Home'></a>
+
         <section className='Header' id='Header'>
           <h1>Header</h1>
         </section>
 
-        <a name='About_me'></a>
+
         <section className='About_me' id='About_me'>
           <h1>Abut me</h1>
         </section>
 
-        <a name='Skills'></a>
+
         <section className='Skills' id='Skills'>
           <h1>Skills</h1>
         </section>
 
-        <a name='My_projects'></a>
+
         <section className='My_projects' id='My_projects'>
           <h1>My projects</h1>
         </section>
 
-        <a name='Footer'></a>
+       
         <section className='Footer' id='Footer'>
           <h1>Footer</h1>
         </section>

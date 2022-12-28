@@ -428,7 +428,8 @@ Variables CSS
  .Footer{
   background-color: var(--Color-Primary-9);
   border-style: solid;
-  height: 11.875rem;
+  /* height: 11.875rem; */
+  height: 30rem;
  }div.light .Footer{
   background-color: var(--Color-Neutral-0);
   color: var(--Color-Primary-9);

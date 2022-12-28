@@ -27,7 +27,6 @@ section[id] {
   pointer-events: none;
   z-index: 1000;
   /* border: 4px solid blue; */
-
   position: fixed;
   top: 50%;
   left: 0;

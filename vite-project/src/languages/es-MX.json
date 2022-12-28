@@ -3,5 +3,8 @@
     "app.nav_menu_2": "Sobre mi",
     "app.nav_menu_3": "Habilidades",
     "app.nav_menu_4": "Mis Proyectos",
-    "app.nav_menu_5": "Contacto"
+    "app.nav_menu_5": "Contacto",
+    "app.home_part_1": "Hola, mi nombre es",
+    "app.home_part_2": "Francisco Navarro",
+    "app.home_part_3": "y soy Full Stack Web Developer"
 }

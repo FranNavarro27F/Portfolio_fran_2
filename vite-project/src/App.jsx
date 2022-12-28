@@ -207,7 +207,26 @@ function App() {
 
 
         <section className='Header' id='Header'>
-          <h1>Header</h1>
+          <div id='home'>
+            <p>
+              <FormattedMessage
+                id= 'app.home_part_1'
+                defaultMessage= 'Hello I am'
+                />
+            </p>
+            <p>
+              <FormattedMessage
+                id= 'app.home_part_2'
+                defaultMessage= 'Francisco Navarro'
+              />
+            </p>
+            <p>
+              <FormattedMessage
+                id= 'app.home_part_3'
+                defaultMessage= 'and I am a Full Stack Web Developer'
+              />
+            </p>
+          </div>
         </section>
 
 

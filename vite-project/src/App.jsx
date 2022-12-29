@@ -10,18 +10,32 @@ import { IntlProvider, FormattedMessage } from 'react-intl';
 import MessagesSpanish from './languages/es-MX.json';
 import MessagesEnglish from './languages/en-US.json';
 import { langContext } from './context/langContext';
+import { useEffect } from 'react';
 
 function App() {
 
+  
   let language= useContext(langContext);
-
+  
+  
+  let modeStorage= localStorage.getItem('mode');
+  
   let [close_flag, setClose_flag]= useState(false);
-  let [mode, setMode]= useState("dark");
+  let [mode, setMode]= useState(modeStorage ? modeStorage : "dark");
   let logos= mode === "dark" ? fran_logo_claro : fran_logo_negro;
+  
 
   const handleMode= ()=> {
-    mode === "dark" ? setMode("light") : setMode("dark");
-  }
+    // mode === "dark" ? setMode("light") : setMode("dark");
+    if(mode === "dark"){
+      setMode("light")
+      localStorage.setItem('mode', 'light')
+    }else {
+      setMode("dark")
+      localStorage.setItem('mode', 'dark')
+    }
+  };
+
   const button_Dark_Light_ref= useRef(null);
   const dark_light_active_ref= useRef(null);
   
@@ -30,15 +44,20 @@ function App() {
   const switch_mode= ()=> {
     if(button_Dark_Light_ref.current.className === ""){
       button_Dark_Light_ref.current.className = "light"
+      localStorage.setItem('mode', 'light')
     }else if(button_Dark_Light_ref.current.className === "light"){
       button_Dark_Light_ref.current.className= "dark"
+      localStorage.setItem('mode', 'dark')
     }else if(button_Dark_Light_ref.current.className === "dark"){
       button_Dark_Light_ref.current.className= "light"
+      localStorage.setItem('mode', 'light')
     }
     if(mode === "dark"){
        setMode("light")
+       localStorage.setItem('mode', 'light')
     }else if(mode === "light"){
       setMode("dark")
+      localStorage.setItem('mode', 'dark')
     }
     if(dark_light_active_ref.current.className === "switch"){
       dark_light_active_ref.current.className= "switch active";
@@ -81,7 +100,7 @@ function App() {
 
   return (
     
-    <div ref={button_Dark_Light_ref}>
+    <div className={mode}  ref={button_Dark_Light_ref}>
       <div className='observer-root-margin'></div>
       <div className='gridContainter'>
 

@@ -140,7 +140,7 @@ function App() {
                         ref={dark_light_active_ref}
                         >
                         <span><img src={sun} alt="sun" /></span>
-                      <span><img src={moon} alt="moon" /></span>
+                      <span><img src={moon} alt="moon"  id='moon_1'/></span>
                       </button>
                     </div>
                   <div className='language'>

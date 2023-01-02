@@ -227,6 +227,7 @@ function App() {
 
         <section className='Header' id='Header'>
           <div id='home'>
+            <div className='home_content_1' >
             <p>
               <FormattedMessage
                 id= 'app.home_part_1'
@@ -245,6 +246,7 @@ function App() {
                 defaultMessage= 'and I am a Full Stack Web Developer'
               />
             </p>
+            </div>
           </div>
         </section>
 

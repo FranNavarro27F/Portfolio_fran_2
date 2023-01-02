@@ -311,13 +311,15 @@ Variables CSS
       align-items: flex-end;
     }
     .nav__container__lang-and-dark{
+      /* background-color: #094043; */
       display: flex;
       justify-content: space-between;
       width: 17vw;
       height: 4rem;
     }
   .language button img{
-    height: 1.4rem;
+    /* background-color: #1BC1CA; */
+    height: 1rem;
   }
 }
 

@@ -228,24 +228,52 @@ function App() {
         <section className='Header' id='Header'>
           <div id='home'>
             <div className='home_content_1' >
-            <p>
-              <FormattedMessage
-                id= 'app.home_part_1'
-                defaultMessage= 'Hello I am'
-                />
-            </p>
-            <p>
-              <FormattedMessage
-                id= 'app.home_part_2'
-                defaultMessage= 'Francisco Navarro'
-              />
-            </p>
-            <p>
-              <FormattedMessage
-                id= 'app.home_part_3'
-                defaultMessage= 'and I am a Full Stack Web Developer'
-              />
-            </p>
+              
+              <div id='home_div_1_part1'>
+                <p>
+                  <FormattedMessage
+                    id= 'app.home_part_1'
+                    defaultMessage= 'Hello I am'
+                    />
+                </p>
+              </div>
+
+              <div id='home_div_1_part2'>
+                <p>
+                  <FormattedMessage
+                    id= 'app.home_part_2'
+                    defaultMessage= 'Francisco'
+                  />
+                </p>
+              </div>
+
+              <div id='home_div_1_part2_1-2'>
+                <p>
+                  <FormattedMessage
+                    id= 'app.home_part_2_1-2'
+                    defaultMessage= 'Navarro'
+                  />
+                </p>
+              </div>
+
+              <div id='home_div_1_part3'>
+                <p>
+                  <FormattedMessage
+                    id= 'app.home_part_3'
+                    defaultMessage= 'and I am a'
+                  />
+                </p>
+              </div>
+
+              <div id='home_div_1_part3_1-2'>
+                <p>
+                  <FormattedMessage
+                    id= 'app.home_part_3_1-2'
+                    defaultMessage= 'Full Stack Web Developer'
+                  />
+                </p>
+              </div>
+
             </div>
           </div>
         </section>

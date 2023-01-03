@@ -283,7 +283,7 @@ Variables CSS
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: clip-path 1s;
   }div.light .nav__menu{
-      background-color: var(--Color-Second-0) ;
+      background-color: var(--Color-Second-1) ;
     }
   
   .nav__input:checked + .nav__menu{
@@ -363,7 +363,7 @@ Variables CSS
     display: flex;
     justify-content: space-evenly
   }div.light .nav__menu{
-      background-color: var(--Color-Second-0) ;
+      background-color: var(--Color-Second-1) ;
     }
     .light-dark{
       /* background-color: #35DAE4; */

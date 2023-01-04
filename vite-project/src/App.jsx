@@ -11,6 +11,7 @@ import MessagesSpanish from './languages/es-MX.json';
 import MessagesEnglish from './languages/en-US.json';
 import { langContext } from './context/langContext';
 import { useEffect } from 'react';
+import img_cv from './assets/cv_img.jpg'
 
 function App() {
 
@@ -280,7 +281,54 @@ function App() {
 
 
         <section className='About_me' id='About_me'>
-          <h1>Abut me</h1>
+          <div id='about_me'>
+
+            <div className='about_me_content_1'>
+                <div className='about_me_title'>
+                  <p>About me</p>
+                </div>
+            </div>
+
+            <div className='about_me_content_2'>
+                <div className='about_me_img'>
+                  <img src={img_cv} alt="img_cv" />
+                </div>
+            </div>
+
+            <div className='about_me_content_3'>
+                <div className='about_me_description'>
+                  <span>
+                  <FormattedMessage
+                    id= 'app.about_me_content_3'
+                    defaultMessage= 'My name is Francisco, I´m 27 years old and I´m from the city of Mar del Plata. Passionate about Technology and taking my first steps in web development.'
+                  />
+                  </span>
+                </div>
+            </div>
+
+            <div className='about_me_content_4'>
+                <div className='about_me_status'>
+                  <img src="#" alt="#" />
+                  <p>Status</p>
+                  <p>Open to work</p>
+                </div>
+            </div>
+
+            <div className='about_me_content_5'>
+                <div className='about_me_availability'>
+                  <img src="#" alt="#" />
+                  <p>Availability</p>
+                  <p>Full Time</p>
+                </div>
+            </div>
+
+            <div className='about_me_content_6'>
+                <div className='about_me_button'>
+                  <button>Download Resume</button>
+                </div>
+            </div>
+
+          </div>
         </section>
 
 

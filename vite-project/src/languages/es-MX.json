@@ -4,9 +4,10 @@
     "app.nav_menu_3": "Habilidades",
     "app.nav_menu_4": "Mis Proyectos",
     "app.nav_menu_5": "Contacto",
-    "app.home_part_1": "Hola, mi nombre es",
+    "app.home_part_1": "Hola, soy",
     "app.home_part_2": "Francisco",
     "app.home_part_2_1-2": "Navarro",
-    "app.home_part_3": "and I am a",
-    "app.home_part_3_1-2": "Full Stack Web Developer"
+    "app.home_part_3": "y me encanta ser",
+    "app.home_part_3_1-2": "Desarrollador Web Full Stack",
+    "app.about_me_content_3": "Mi nombre es Francisco, tengo 27 años y soy de la ciudad de Mar del Plata. Amo la Tecnología y estoy dando mis primeros pasos en el desarrollo web."
 }

@@ -447,28 +447,17 @@ Variables CSS
  }
 
  .Header{
-  
-  /* height: 18.375rem; */
   height: 13rem;
   margin-top: 6.1875rem;
   margin-bottom: 84px;
-  /* height: 18.375rem; */
  }div.light .Header{
   border-bottom: solid;
- /* background-color: var(--Color-Neutral-0); */
- /* color: var(--Color-Primary-9); */
-  
 }
  .About_me{
-  background-color: var(--Color-Primary-9);
-  border-style: solid;
-  height: 24.5625rem;
+  /* border-style: solid; */
   margin-bottom: 5.25rem;
  }div.light .About_me{
-  background-color: var(--Color-Neutral-0);
-  color: var(--Color-Primary-9);
-  font-family: Nunito;
-  font-size: 12px;
+
 }
  .Skills{
   background-color: var(--Color-Primary-9);
@@ -512,7 +501,7 @@ Variables CSS
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   /* grid-template-rows: 4.9% 4.9% 4.9% 4.9% 4.9% 4.9% 4.9% 4.9% 4.9% 4.9% 4.9%; */
   column-gap: 1fr;
-  grid-column: 4/11
+  /* grid-column: 4/11 */
 
  }
  .home_content_1{
@@ -565,4 +554,84 @@ Variables CSS
     color: var(--Color-Second-0);
   }div.light #home_div_1_part3_1-2{
     color: var(--Color-Primary-7);
+  }
+
+  /* About me */
+  #about_me {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .about_me_content_1{
+    /* background-color: #1BC1CA; */
+    grid-column: 2/11;
+  }
+  .about_me_content_2{
+    /* background-color: #67dbe1; */
+    grid-column: 2/11;
+  }
+  .about_me_content_3{
+    background-color: #436061;
+    grid-column: 2/11;
+  }
+  .about_me_content_4{
+    background-color: #1c6264;
+    grid-column: 2/6;
+  }
+  .about_me_content_5{
+    background-color: #6cd8db;
+    grid-column: 7/11;
+  }
+  .about_me_content_6{
+    background-color: #083132;
+    grid-column: 2/11;
+  }
+  
+  .about_me_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: var(--Color-Second-7);
+  }
+  .about_me_img{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+      .about_me_img img{
+        height: 12rem;
+        border-radius: 2rem;
+      }
+  .about_me_description{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Color-Second-0);
+  }
+  .about_me_status{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about_me_availability{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about_me_button{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
   }

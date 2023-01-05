@@ -572,7 +572,7 @@ Variables CSS
     grid-column: 2/11;
   }
   .about_me_content_3{
-    background-color: #436061;
+    /* background-color: #436061; */
     grid-column: 2/11;
   }
   .about_me_content_4{

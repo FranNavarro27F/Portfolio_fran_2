@@ -517,7 +517,7 @@ Variables CSS
     color: var(--Color-Primary-6);
   }
   #home_div_1_part2{
-    margin-top: 16px;
+    margin-top: 1rem;
     /* width: 70vw; */
     height: 6vh;
     font-weight: 500;
@@ -539,7 +539,7 @@ Variables CSS
     color: var(--Color-Primary-7);
   }
   #home_div_1_part3{
-    margin-top: 16px;
+    margin-top: 1rem;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--Color-Second-0);
@@ -592,12 +592,12 @@ Variables CSS
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: var(--Color-Second-7);
   }
   .about_me_img{
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,31 +607,32 @@ Variables CSS
         border-radius: 2rem;
       }
   .about_me_description{
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--Color-Second-0);
+    font-size: 14px;
   }
   .about_me_status{
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .about_me_availability{
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .about_me_button{
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }

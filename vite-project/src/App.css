@@ -576,14 +576,17 @@ Variables CSS
     grid-column: 2/11;
   }
   .about_me_content_4{
-    background-color: #1c6264;
+    background-color: var(--Color-Neutral-8);
+    border-radius: 1rem;
     grid-column: 2/6;
   }
   .about_me_content_5{
-    background-color: #6cd8db;
+    background-color: var(--Color-Neutral-8);
+    border-radius: 1rem;
     grid-column: 7/11;
   }
   .about_me_content_6{
+    margin-top: 8px;
     background-color: #083132;
     grid-column: 2/11;
   }
@@ -616,6 +619,7 @@ Variables CSS
     font-size: 14px;
   }
   .about_me_status{
+    
     margin-top: 1rem;
     display: flex;
     justify-content: center;
@@ -623,6 +627,7 @@ Variables CSS
     flex-direction: column;
   }
   .about_me_availability{
+    
     margin-top: 1rem;
     display: flex;
     justify-content: center;

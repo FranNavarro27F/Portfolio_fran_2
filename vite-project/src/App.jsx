@@ -12,6 +12,8 @@ import MessagesEnglish from './languages/en-US.json';
 import { langContext } from './context/langContext';
 import { useEffect } from 'react';
 import img_cv from './assets/cv_img.jpg'
+import img_work from './assets/check2-circle.svg'
+import img_clock from './assets/hourglass-split.svg'
 
 function App() {
 
@@ -308,7 +310,7 @@ function App() {
 
             <div className='about_me_content_4'>
                 <div className='about_me_status'>
-                  <img src="#" alt="#" />
+                  <img src={img_work} alt="#" />
                   <p>Status</p>
                   <p>Open to work</p>
                 </div>
@@ -316,7 +318,7 @@ function App() {
 
             <div className='about_me_content_5'>
                 <div className='about_me_availability'>
-                  <img src="#" alt="#" />
+                  <img src={img_clock} alt="#" />
                   <p>Availability</p>
                   <p>Full Time</p>
                 </div>

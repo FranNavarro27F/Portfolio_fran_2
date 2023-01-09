@@ -619,21 +619,26 @@ Variables CSS
     font-size: 14px;
   }
   .about_me_status{
-    
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+    font-size: 16px;
+  }    
+      .about_me_status img{
+        height: 1.5rem;
+      }
   .about_me_availability{
-    
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+      .about_me_availability img{
+        height: 1.5rem;
+      }
   .about_me_button{
     margin-top: 1rem;
     display: flex;

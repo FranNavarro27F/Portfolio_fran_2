@@ -311,16 +311,36 @@ function App() {
             <div className='about_me_content_4'>
                 <div className='about_me_status'>
                   <img src={img_work} alt="#" />
-                  <p>Status</p>
-                  <p>Open to work</p>
+                  <p>
+                    <FormattedMessage
+                      id= 'app.about_me_content_4_part_1'
+                      defaultMessage= 'Status'
+                    />
+                  </p>
+                  <p>
+                  <FormattedMessage
+                    id= 'app.about_me_content_4_part_2'
+                    defaultMessage= 'Open to work'
+                  />
+                  </p>
                 </div>
             </div>
 
             <div className='about_me_content_5'>
                 <div className='about_me_availability'>
                   <img src={img_clock} alt="#" />
-                  <p>Availability</p>
-                  <p>Full Time</p>
+                  <p>
+                    <FormattedMessage
+                      id= 'app.about_me_content_5_part_1'
+                      defaultMessage= 'Availability'
+                    />
+                  </p>
+                  <p>
+                    <FormattedMessage
+                      id= 'app.about_me_content_5_part_2'
+                      defaultMessage= 'Part-time'
+                    />
+                  </p>
                 </div>
             </div>
 

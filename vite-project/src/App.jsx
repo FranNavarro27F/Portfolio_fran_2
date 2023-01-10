@@ -11,9 +11,10 @@ import MessagesSpanish from './languages/es-MX.json';
 import MessagesEnglish from './languages/en-US.json';
 import { langContext } from './context/langContext';
 import { useEffect } from 'react';
-import img_cv from './assets/cv_img.jpg'
-import img_work from './assets/check2-circle.svg'
-import img_clock from './assets/hourglass-split.svg'
+import img_cv from './assets/cv_img.jpg';
+import img_work from './assets/check2-circle.svg';
+import img_clock from './assets/hourglass-split.svg';
+import cv from './downloads/CV_fran_jobPrep.pdf';
 
 function App() {
 
@@ -287,7 +288,12 @@ function App() {
 
             <div className='about_me_content_1'>
                 <div className='about_me_title'>
-                  <p>About me</p>
+                  <p>
+                    <FormattedMessage
+                      id= 'app.about_me_content_1_title'
+                      defaultMessage= 'About me'
+                    />
+                  </p>
                 </div>
             </div>
 
@@ -346,7 +352,14 @@ function App() {
 
             <div className='about_me_content_6'>
                 <div className='about_me_button'>
-                  <button>Download Resume</button>
+                  <button>
+                    <a href={cv} download>
+                      <FormattedMessage
+                        id= 'app.about_me_content_6_button'
+                        defaultMessage= 'Download Resume'
+                      />
+                    </a>
+                  </button>
                 </div>
             </div>
 

@@ -579,11 +579,17 @@ Variables CSS
     background-color: var(--Color-Neutral-8);
     border-radius: 1rem;
     grid-column: 2/6;
+  }  div.light .about_me_content_4{
+    background-color: var(--Color-Second-1);
+    color: var(--Color-Primary-9);
   }
   .about_me_content_5{
     background-color: var(--Color-Neutral-8);
     border-radius: 1rem;
     grid-column: 7/11;
+  } div.light .about_me_content_5{
+    background-color: var(--Color-Second-1);
+    color: var(--Color-Primary-9);
   }
   .about_me_content_6{
     margin-top: 1rem;
@@ -597,8 +603,12 @@ Variables CSS
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1.4rem;
     color: var(--Color-Second-7);
-  }
+  } div.light .about_me_title{
+      font-family: 'Nunito bold';
+      color: var(--Color-Second-8);
+    }
   .about_me_img{
     margin-top: 1rem;
     display: flex;
@@ -616,8 +626,12 @@ Variables CSS
     align-items: center;
     text-align: center;
     color: var(--Color-Second-0);
+    font-family: 'Nunito bold'; 
     font-size: 14px;
     margin-bottom: 1rem;
+  }  div.light .about_me_description{
+    /* font-family: 'Nunito bold';  */
+    color: var(--Color-Primary-9);
   }
   .about_me_status{
     margin-top: 1rem;
@@ -660,4 +674,11 @@ Variables CSS
         border-radius: 8px;
         background-color: var(--Color-Primary-5);
         color: var(--Color-Second-0);
+        border: none;
+      }  div.light .about_me_button button{
+        background-color: var(--Color-Second-6);
       }
+          .about_me_button button a{
+            text-decoration: none;
+            color: var(--Color-Second-0);
+          }

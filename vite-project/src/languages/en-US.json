@@ -10,9 +10,11 @@
     "app.home_part_3": "and I am a",
     "app.home_part_3_1-2": "Full Stack Web Developer",
     "app.about_me_content_3": "My name is Francisco, I'm 27 years old and I'm from the city of Mar del Plata. Passionate about Technology and taking my first steps in web development.",
+    "app.about_me_content_1_title": "About me",
     "app.about_me_content_4_part_1": "Status",
     "app.about_me_content_4_part_2": "Open to Work",
     "app.about_me_content_5_part_1": "Availability",
-    "app.about_me_content_5_part_2": "Part-time"
+    "app.about_me_content_5_part_2": "Part-time",
+    "app.about_me_content_6_button": "Download Resume"
     
 }

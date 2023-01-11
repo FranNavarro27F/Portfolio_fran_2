@@ -460,13 +460,13 @@ Variables CSS
 
 }
  .Skills{
-  background-color: var(--Color-Primary-9);
-  border-style: solid;
-  height: 52.125rem;
+  /* background-color: var(--Color-Primary-9); */
+  /* border-style: solid; */
+  /* height: 52.125rem; */
   margin-bottom: 6.5625rem;
  }div.light .Skills{
-  background-color: var(--Color-Neutral-0);
-  color: var(--Color-Primary-9);
+  /* background-color: var(--Color-Neutral-0);
+  color: var(--Color-Primary-9); */
  }
  .My_projects{
   background-color: var(--Color-Primary-9);
@@ -605,8 +605,8 @@ Variables CSS
     margin-bottom: 1rem;
     font-size: 1.4rem;
     color: var(--Color-Second-7);
+    font-family: 'Nunito bold';
   } div.light .about_me_title{
-      font-family: 'Nunito bold';
       color: var(--Color-Second-8);
     }
   .about_me_img{
@@ -648,6 +648,11 @@ Variables CSS
         margin-top: 8px;
         margin-bottom: 1rem;
       }
+      #Open_to_work_p_2{
+        color: var(--Color-Second-1);
+      }  div.light #Open_to_work_p_2{
+          color: var(--Color-Second-8);
+        }
   .about_me_availability{
     margin-top: 1rem;
     display: flex;
@@ -662,6 +667,11 @@ Variables CSS
         height: 1.5rem;
         margin-top: 8px;
         margin-bottom: 1rem;
+      }
+      #availability_p_2{
+        color: var(--Color-Second-1);
+      } div.light #availability_p_2{
+        color: var(--Color-Second-8);
       }
   .about_me_button{
     display: flex;
@@ -682,3 +692,181 @@ Variables CSS
             text-decoration: none;
             color: var(--Color-Second-0);
           }
+
+
+/* Skills */
+#skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills_content_0{
+  grid-column: 1/4;
+}
+    .skills_title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      color: var(--Color-Second-7);
+      font-family: 'Nunito bold';
+    } div.light .skills_title{
+      color: var(--Color-Second-8);
+      }
+.skills_content_1{
+  grid-column: 1/2;
+  margin-top: 0.5rem;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}  div.light .skills_content_1{
+    color: var(--Color-Primary-9);
+  }
+.skills_content_2{
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}  div.light .skills_content_2{
+    color: var(--Color-Primary-9);
+  }
+.skills_content_3{
+  grid-column: 3/4;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_3{
+  color: var(--Color-Primary-9)
+}
+.skills_content_4{
+  grid-column: 1/2;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_4{
+  color: var(--Color-Primary-9)
+}
+.skills_content_5{
+  grid-column: 2/3;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_5{
+  color: var(--Color-Primary-9)
+}
+.skills_content_6{
+  grid-column: 3/4;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_6{
+  color: var(--Color-Primary-9)
+}
+.skills_content_7{
+  grid-column: 1/2;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_7{
+  color: var(--Color-Primary-9)
+}
+.skills_content_8{
+  grid-column: 2/3;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_8{
+  color: var(--Color-Primary-9)
+}
+.skills_content_9{
+  grid-column: 3/4;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_9{
+  color: var(--Color-Primary-9)
+}
+.skills_content_10{
+  grid-column: 1/2;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_10{
+  color: var(--Color-Primary-9)
+}
+.skills_content_11{
+  grid-column: 2/3;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_11{
+  color: var(--Color-Primary-9)
+}
+.skills_content_12{
+  grid-column: 3/4;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_12{
+  color: var(--Color-Primary-9)
+}
+.skills_content_13{
+  grid-column: 1/2;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+} div.light .skills_content_13{
+  color: var(--Color-Primary-9)
+}

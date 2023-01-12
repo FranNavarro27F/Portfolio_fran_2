@@ -16,7 +16,10 @@ import img_work from './assets/check2-circle.svg';
 import img_clock from './assets/hourglass-split.svg';
 import cv from './downloads/CV_fran_jobPrep.pdf';
 import github_claro from './assets/github_claro.svg';
-import github from './assets/github.svg'
+import github from './assets/github.svg';
+import Skills_card from './components/Skills_card';
+import { skills } from './components/json/skills.json'
+
 
 function App() {
 
@@ -377,60 +380,22 @@ function App() {
                 </p>
               </div>
             </div>
+              {
+                skills.map((cur)=> {
+                  return(
+                    <Skills_card
+                      img= {cur.img}
+                      name= {cur.name}
+                      key= {cur.name}
+                    />
+                  )
+                })
+              }
             <div className='skills_content_1'>
-              <img src="./skills/javascript.svg" alt="JS" />
-              <p>JavaScript</p>
-            </div>
-            <div className='skills_content_2'>
-              <img src="./skills/react.svg" alt="React" />
-              <p>React.js</p>
-            </div>
-            <div className='skills_content_3'>
-              <img src="./skills/redux.svg" alt="Redux" />
-              <p>Redux</p>
-            </div>
-            <div className='skills_content_4'>
-              <img src="./skills/html-5.svg" alt="HTML5" />
-              <p>html5</p>
-            </div>
-            <div className='skills_content_5'>
-              <img src="./skills/node-js.svg" alt="node.js" />
-              <p>Node.js</p>
-            </div>
-            <div className='skills_content_6'>
-              <img src="./skills/css-3.svg" alt="CSS3" />
-              <p>css3</p>
-            </div>
-            <div className='skills_content_7'>
-              <img src="./skills/typescript.svg" alt="Typescript" />
-              <p>Tipescript</p>
-            </div>
-            <div className='skills_content_8'>
-              <img src="./skills/mongodb.svg" alt="MongoDB" />
-              <p>MongoDB</p>
-            </div>
-            <div className='skills_content_9'>
-              <img src="./skills/postgresql.svg" alt="PostgreSQL" />
-              <p>PostgreSQL</p>
-            </div>
-            <div className='skills_content_10'>
-              <img src="skills/java.svg" alt="Java" />
-              <p>Java</p>
-            </div>
-            <div className='skills_content_11'>
-              <img src="skills/git.svg" alt="GIT" />
-              <p>Git</p>
-            </div>
-            <div className='skills_content_12'>
               <img src={GitHub_icon} alt="GitHub" />
               <p>GitHub</p>
             </div>
-            <div className='skills_content_13'>
-              <img src="skills/figma.svg" alt="Figma" />
-              <p>Figma</p>
-            </div>
-
-
+           
           </div>
         </section>
 

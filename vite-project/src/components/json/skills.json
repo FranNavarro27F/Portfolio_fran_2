@@ -1,0 +1,54 @@
+
+{
+    "skills":[
+        {
+            "name": "JavaScript",
+            "img": "./skills/javascript.svg"
+        },
+        {
+            "name": "React",
+            "img": "./skills/react.svg"
+        },
+        {
+            "name": "Redux",
+            "img": "./skills/redux.svg"
+        },
+        {
+            "name": "HTML5",
+            "img": "./skills/html-5.svg"
+        },
+        {
+            "name": "node.js",
+            "img": "./skills/node-js.svg"
+        },
+        {
+            "name": "CSS3",
+            "img": "./skills/css-3.svg"
+        },
+        {
+            "name": "Typescript",
+            "img": "./skills/typescript.svg"
+        },
+        {
+            "name": "MongoDB",
+            "img": "./skills/mongodb.svg"
+        },
+        {
+            "name": "PostgreSQL",
+            "img": "./skills/postgresql.svg"
+        },
+        {
+            "name": "Java",
+            "img": "skills/java.svg"
+        },
+        {
+            "name": "GIT",
+            "img": "skills/git.svg"
+        },
+        {
+            "name": "Figma",
+            "img": "skills/figma.svg"
+        }
+    ]
+}
+

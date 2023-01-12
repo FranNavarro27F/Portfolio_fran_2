@@ -1,0 +1,12 @@
+
+.skill_card{
+    margin-top: 0.5rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}   div.light .skill_card{
+        color: var(--Color-Primary-9)
+     }

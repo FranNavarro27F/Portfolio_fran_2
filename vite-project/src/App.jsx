@@ -18,7 +18,8 @@ import cv from './downloads/CV_fran_jobPrep.pdf';
 import github_claro from './assets/github_claro.svg';
 import github from './assets/github.svg';
 import Skills_card from './components/Skills_card';
-import { skills } from './components/json/skills.json'
+import { skills } from './components/json/skills.json';
+import img_dogs from './projects_img/the_dogs_app/img_the_dogs_app.png'
 
 
 function App() {
@@ -401,7 +402,11 @@ function App() {
 
 
         <section className='My_projects' id='My_projects'>
-          <h1>My projects</h1>
+          <div id='my_projects'>
+            <div className='my_projects_content_1'>
+              {/* <img src={img_dogs} alt="dogs" /> */}
+            </div>
+          </div>
         </section>
 
        

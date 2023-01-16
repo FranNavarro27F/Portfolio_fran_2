@@ -2,8 +2,8 @@
     "projects": [
         {
             "name": "The dogs app",
-            "img": "url_de_imagen",
-            "description": "description...",
+            "img": "the_dogs_app/img_the_dogs_app.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum numquam sapiente vel, natus dignissimos doloribus odio nobis? Molestias non saepe quae, vel praesentium assumenda? Suscipit modi ea perferendis ut.",
             "link_deploy": "url_link_deploy",
             "link_repository": "url_link_repository"
         },

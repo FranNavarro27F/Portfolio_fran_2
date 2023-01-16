@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import './css/Project_card.css';
+
 
 export default function Project_card({name, img, description, link_deploy, link_repository}) {
   return (
@@ -12,10 +14,12 @@ export default function Project_card({name, img, description, link_deploy, link_
           </span>
         </div>
         <div className='card_content_3'>
-          <button><a href={link_deploy}>Demo</a></button>
-        </div>
-        <div className='card_content_4'>
-          <button><a href={link_repository}>Repository</a></button>
+          <div className='card_content_4'>
+            <button><a href={link_deploy}>Demo</a></button>
+          </div>
+          <div className='card_content_5'>
+            <button><a href={link_repository}>Repository</a></button>
+          </div>
         </div>
     </div>
   )

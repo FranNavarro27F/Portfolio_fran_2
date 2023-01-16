@@ -1,0 +1,27 @@
+
+
+.project_card{
+    /* background-color: aqua; */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.card_content_1 img{
+    margin-top: 2rem;
+    height: 6.5rem;
+    margin-bottom: 0.5rem;
+}
+.card_content_2{
+    margin-top: 0.5rem;
+    width: 80vw;
+    margin-bottom: 0.5rem;
+}
+.card_content_3{
+    margin-top: 0.5rem;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blanchedalmond;
+    margin-bottom: 0.5rem;
+}

@@ -23,6 +23,8 @@ import Project_card from './components/Project_card';
 import {projects} from './components/json/projects.json';
 
 
+
+
 function App() {
 
   let language= useContext(langContext);

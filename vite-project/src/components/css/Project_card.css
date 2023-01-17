@@ -9,19 +9,27 @@
 
 .card_content_1 img{
     margin-top: 2rem;
-    height: 6.5rem;
+    height: 6.2rem;
     margin-bottom: 0.5rem;
 }
 .card_content_2{
-    margin-top: 0.5rem;
-    width: 80vw;
-    margin-bottom: 0.5rem;
+    width: 12.8rem;
+    /* border: 1px solid red; */
+    background-color: var(--Color-Neutral-8);
+    padding: 8px;
+    font-size: 12px;
+    margin-bottom: 1rem;
 }
 .card_content_3{
-    margin-top: 0.5rem;
     width: 80vw;
     display: flex;
-    justify-content: space-evenly;
-    background-color: blanchedalmond;
+    justify-content: space-between;
     margin-bottom: 0.5rem;
+}
+
+.card_content_3 button{
+    height: 2rem;
+    width: 5.8rem;
+    border-radius: 8px;
+    border: none;
 }

@@ -3,21 +3,7 @@
         {
             "name": "The dogs app",
             "img": "the_dogs_app/img_the_dogs_app.png",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum numquam sapiente vel, natus dignissimos doloribus odio nobis? Molestias non saepe quae, vel praesentium assumenda? Suscipit modi ea perferendis ut.",
-            "link_deploy": "url_link_deploy",
-            "link_repository": "url_link_repository"
-        },
-        {
-            "name": "The dogs app",
-            "img": "url_de_imagen",
-            "description": "description...",
-            "link_deploy": "url_link_deploy",
-            "link_repository": "url_link_repository"
-        },
-        {
-            "name": "The dogs app",
-            "img": "url_de_imagen",
-            "description": "description...",
+            "description": "Experiencia académica que consta de 2 semanas y media para realizar un Desafío y Proyecto para Full Stack Developers, se realiza de forma individual y se establecen los siguientes objetivos: - Construir una App utlizando React, Redux, Node y Sequelize. - Afirmar y conectar los conceptos aprendidos en la carrera. - Investigar y aplicar de forma eficiente los conocimientos que faltan para lograr los objetivos. - Aprender mejores prácticas. - Aprender y practicar el workflow de GIT. - Usar y practicar testing. ",
             "link_deploy": "url_link_deploy",
             "link_repository": "url_link_repository"
         }

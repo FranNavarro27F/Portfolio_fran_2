@@ -597,7 +597,7 @@ Variables CSS
     grid-column: 2/11;
   }
   
-  .about_me_title{
+  .titles{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -703,18 +703,7 @@ Variables CSS
 .skills_content_0{
   grid-column: 1/4;
 }
-    .skills_title{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      font-size: 1.4rem;
-      color: var(--Color-Second-7);
-      font-family: 'Nunito bold';
-    } div.light .skills_title{
-      color: var(--Color-Second-8);
-      }
+   
 .skills_content_1{
   grid-column: 1/2;
   margin-top: 0.5rem;

@@ -470,12 +470,12 @@ Variables CSS
  }
  .My_projects{
   /* background-color: var(--Color-Primary-9); */
-  border-style: solid;
+  /* border-style: solid; */
   /* height: 58.125rem; */
   margin-bottom: 4.4375rem;
  }div.light .My_projects{
-  background-color: var(--Color-Neutral-0);
-  color: var(--Color-Primary-9);
+  /* background-color: var(--Color-Neutral-0);
+  color: var(--Color-Primary-9); */
  }
  .Footer{
   background-color: var(--Color-Primary-9);

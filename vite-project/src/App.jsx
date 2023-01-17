@@ -27,12 +27,15 @@ import {projects} from './components/json/projects.json';
 
 function App() {
 
-  let language= useContext(langContext);
-  
+  let language= useContext(langContext); 
   let modeStorage= localStorage.getItem('mode');
   
+  const lang= localStorage.getItem('lang');
+  console.log(lang)
+
   let [close_flag, setClose_flag]= useState(false);
   let [mode, setMode]= useState(modeStorage ? modeStorage : "dark");
+  let [language_state, setLanguage_state]= useState(lang ? lang : "en-US");
   
   let logos= mode === "dark" ? fran_logo_claro : fran_logo_negro;
   let GitHub_icon= mode == "dark" ? github_claro : github ;
@@ -108,6 +111,14 @@ function App() {
     }
   });
 
+  let handleLangState= ()=>{
+    if(language_state === "en-US"){
+      setLanguage_state("es-MX")
+    }else if(language_state === "es-MX"){
+      setLanguage_state("en-US")
+    }
+  };
+
   return (
     <div className={mode}  ref={button_Dark_Light_ref}>
       <div className='observer-root-margin'></div>
@@ -154,12 +165,12 @@ function App() {
                     </div>
                   <div className='language'>
                     <div>
-                      <button onClick={()=> language.establecerLenguaje('en-US')}>
+                      <button onClick={()=> {language.establecerLenguaje('en-US'), handleLangState()}}>
                         <img src={eng_flag} alt="United Kingdom" />
                       </button>
                     </div>
                     <div>
-                      <button onClick={()=> language.establecerLenguaje('es-MX')}>
+                      <button onClick={()=> {language.establecerLenguaje('es-MX'), handleLangState()}}>
                         <img src={spa_flag} alt="España" />
                       </button>
                     </div>
@@ -422,7 +433,7 @@ function App() {
                     <Project_card 
                       name= {cur.name}
                       img= {cur.img}
-                      description= {cur.description}
+                      description= {language_state === "en-US" ? cur.description_en : cur.description_es}
                       link_deploy= {cur.link_deploy}
                       link_repository= {cur.link_repository}
                     />

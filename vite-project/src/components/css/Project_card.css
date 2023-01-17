@@ -9,11 +9,11 @@
 
 .card_content_1 img{
     margin-top: 2rem;
-    height: 6.2rem;
+    width: 80vw;
     margin-bottom: 0.5rem;
 }
 .card_content_2{
-    width: 12.8rem;
+    width: 80vw;
     /* border: 1px solid red; */
     background-color: var(--Color-Neutral-8);
     padding: 8px;
@@ -25,7 +25,7 @@
         color: var(--Color-Primary-9);
     }
 .card_content_3{
-    width: 12.8rem;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -37,7 +37,7 @@
 }
 .card_content_3 button{
     height: 2rem;
-    width: 6rem;
+    width: 39vw;
     border-radius: 8px;
     border: none;
     background-color: var(--Color-Primary-5);

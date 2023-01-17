@@ -14,11 +14,15 @@ export default function Project_card({name, img, description, link_deploy, link_
           </span>
         </div>
         <div className='card_content_3'>
-          <div className='card_content_4'>
-            <button><a href={link_deploy}>Demo</a></button>
+          <div className='card_project_button_1'>
+            <button><a href={link_deploy}>
+                <img src="button_card_my_project/link_demo.svg" alt="" /> Demo
+              </a></button>
           </div>
-          <div className='card_content_5'>
-            <button><a href={link_repository}>Repository</a></button>
+          <div className='card_project_button_2'>
+            <button><a href={link_repository}>
+                <img src="button_card_my_project/link_github.svg" alt="" /> Repository
+              </a></button>
           </div>
         </div>
     </div>

@@ -291,7 +291,7 @@ function App() {
           <div id='about_me'>
 
             <div className='about_me_content_1'>
-                <div className='about_me_title'>
+                <div className='titles'>
                   <p>
                     <FormattedMessage
                       id= 'app.about_me_content_1_title'
@@ -375,7 +375,7 @@ function App() {
           <div id='skills'>
 
             <div className='skills_content_0'>
-              <div className='skills_title'>
+              <div className='titles'>
                 <p>
                   <FormattedMessage
                         id= 'app.skills_title'
@@ -407,6 +407,15 @@ function App() {
         <section className='My_projects' id='My_projects'>
           <div id='my_projects'>
             <div className='my_projects_content_1'>
+            <div className='titles'>
+                  <p>
+                    <FormattedMessage
+                      id= 'app.my_projects_content_1_title'
+                      defaultMessage= 'My Projects'
+                    />
+                  </p>
+                </div>
+            </div>
               {
                 projects.map(cur=> {
                   return (
@@ -420,6 +429,8 @@ function App() {
                   )
                 })
               }
+            <div className='my_projects_content_2'>
+
             </div>
           </div>
         </section>

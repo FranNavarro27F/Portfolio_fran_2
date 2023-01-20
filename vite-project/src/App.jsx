@@ -448,7 +448,17 @@ function App() {
 
        
         <section className='Footer' id='Footer'>
-          <h1>Footer</h1>
+          <div id='footer'>
+            <div>
+              <a href="https://www.linkedin.com/in/fran-navarro-/">LinkedIn</a> 
+            </div>
+            <div>
+              <a href="https://github.com/FranNavarro27F">GitHub</a>
+            </div>
+            <div>
+              <a href="mailto:fran27dev@gmail.com">Mail</a>
+            </div>
+          </div>
         </section>
 
 

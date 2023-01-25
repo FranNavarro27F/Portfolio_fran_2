@@ -449,15 +449,31 @@ function App() {
        
         <section className='Footer' id='Footer'>
           <div id='footer'>
-            <div className='footer_contact_button'>
-              <a href="https://www.linkedin.com/in/fran-navarro-/"><img src="button_footer/linkedin.svg" alt="GitHub_img" /></a> <p>LinkedIn</p> 
-            </div>
-            <div className='footer_contact_button'>
-              <a href="https://github.com/FranNavarro27F"><img src="./button_card_my_project/link_github.svg" alt="" /></a> <p>GitHub</p> 
-            </div>
-            <div className='footer_contact_button'>
-              <a href="mailto:fran27dev@gmail.com"><img src="./button_footer/mail.svg" alt="" /></a> <p>Mail</p>
-            </div>
+            
+              
+                <a href="https://www.linkedin.com/in/fran-navarro-/">
+                  <div className='footer_contact_button'>
+                    <img src="button_footer/linkedin.svg" alt="GitHub_img" />
+                    <p>LinkedIn</p> 
+                  </div>
+                </a> 
+              
+               <a href="https://github.com/FranNavarro27F">
+                <div className='footer_contact_button'>
+                  <img src="./button_card_my_project/link_github.svg" alt="" />
+                  <p>GitHub</p> 
+                </div>
+               </a> 
+              
+              
+               <a href="mailto:fran27dev@gmail.com">
+                <div className='footer_contact_button'>
+                  <img src="./button_footer/mail.svg" alt="" />
+                  <p>Mail</p>
+                </div>
+               </a>
+                
+              
           </div>
         </section>
 

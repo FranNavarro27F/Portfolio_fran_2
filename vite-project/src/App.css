@@ -737,12 +737,16 @@ Variables CSS
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+}
+#footer a{
+  text-decoration: none;
+  color: var(--Color-Primary-0)
 }
 .footer_contact_button{
   margin-top: 0.5rem;
   height: 3rem;
-  width: 100%;
+  width: 95vw;
   background-color: var(--Color-Primary-5);
   display: flex;
   justify-content: center;
@@ -756,4 +760,7 @@ Variables CSS
 .footer_contact_button img{
   height: 2rem;
   margin-right: 1rem;
+}
+.footer_contact_button p{
+  text-decoration: none;
 }

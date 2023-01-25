@@ -478,13 +478,13 @@ Variables CSS
   color: var(--Color-Primary-9); */
  }
  .Footer{
-  background-color: var(--Color-Primary-9);
-  border-style: solid;
+  /* background-color: var(--Color-Primary-9); */
+  /* border-style: solid; */
   /* height: 11.875rem; */
-  height: 30rem;
+  height: 25rem;
  }div.light .Footer{
-  background-color: var(--Color-Neutral-0);
-  color: var(--Color-Primary-9);
+  /* background-color: var(--Color-Neutral-0); */
+  /* color: var(--Color-Primary-9); */
  }
 
 
@@ -729,4 +729,31 @@ Variables CSS
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+
+#footer{
+  /* background-color: #6d8283; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_contact_button{
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 100%;
+  background-color: var(--Color-Primary-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}   div.light .footer_contact_button{
+      background-color: var(--Color-Second-6);
+      /* color: var(--Color-Primary-0); */
+    }
+.footer_contact_button img{
+  height: 2rem;
+  margin-right: 1rem;
 }

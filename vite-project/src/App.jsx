@@ -31,7 +31,7 @@ function App() {
   let modeStorage= localStorage.getItem('mode');
   
   const lang= localStorage.getItem('lang');
-  console.log(lang)
+  
 
   let [close_flag, setClose_flag]= useState(false);
   let [mode, setMode]= useState(modeStorage ? modeStorage : "dark");
@@ -449,14 +449,14 @@ function App() {
        
         <section className='Footer' id='Footer'>
           <div id='footer'>
-            <div>
-              <a href="https://www.linkedin.com/in/fran-navarro-/">LinkedIn</a> 
+            <div className='footer_contact_button'>
+              <a href="https://www.linkedin.com/in/fran-navarro-/"><img src="button_footer/linkedin.svg" alt="GitHub_img" /></a> <p>LinkedIn</p> 
             </div>
-            <div>
-              <a href="https://github.com/FranNavarro27F">GitHub</a>
+            <div className='footer_contact_button'>
+              <a href="https://github.com/FranNavarro27F"><img src="./button_card_my_project/link_github.svg" alt="" /></a> <p>GitHub</p> 
             </div>
-            <div>
-              <a href="mailto:fran27dev@gmail.com">Mail</a>
+            <div className='footer_contact_button'>
+              <a href="mailto:fran27dev@gmail.com"><img src="./button_footer/mail.svg" alt="" /></a> <p>Mail</p>
             </div>
           </div>
         </section>

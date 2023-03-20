@@ -10,3 +10,12 @@
 ### Figma-Desktop Design:
 > ![image](https://user-images.githubusercontent.com/101297908/205188081-7ddbcfde-6eb9-4054-9b7c-9e63e789abdd.png)
 
+
+## Breakpoints:
+
+- 0px      <-->    320px
+- 320px    <-->    480px
+- 480px    <-->    768px
+- 768px    <-->    960px
+- 960px    <-->    1024px
+- 1024px   <-->    1328px

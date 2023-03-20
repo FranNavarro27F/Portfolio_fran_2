@@ -7,6 +7,14 @@
             "description_en": "Academic experience consisting of 2 and a half weeks to perform a Challenge and Project for Full Stack Developers, it is done individually and the following objectives are set: - Build an App using React, Redux, Node and Sequelize. - To affirm and connect the concepts learned in the course. - Investigate and efficiently apply the missing knowledge to achieve the objectives. - Learn best practices. - Learn and practice GIT workflow. - Use and practice testing.",
             "link_deploy": "https://pi-henry-dogs-3ohpjr9xy-frannavarro27f.vercel.app/",
             "link_repository": "https://github.com/FranNavarro27F/pi_Henry-Dogs"
+        },
+        {
+            "name": "Programax APP",
+            "img": "programax_app/Programax_APP.png",
+            "description_es": "Experiencia académica que consta de 3 semanas de trabajo intenso en materia de investigación y aplicación de nuevas tecnologías, bajo la metodología ágil SCRUM, trabajo en equipo mediante el work-Flow de GitHub, utilizando ramas, creando pullRequest y controlando versiones de desarrollo y producción para desarrollar un producto digital en tiempo y forma con todos los lineamientos y objetivos establecidos, tales como: Deploy, tanto FrontEnd como BackEnd, Auth de terceros integrada, Pasarela de pagos, pago P2P y suscripción, Filtros y ordenamientos combinados, Cloudinary/upload/bucket, Notificaciones (mail/socket.io), Borrado lógico, Local storage/persist, Reviews/puntuación, Dashboard admin",
+             "description_en": "Academic experience consisting of 3 weeks of intense work on research and application of new technologies, under the agile SCRUM methodology, teamwork using GitHub work-Flow, using branches, creating pullRequest and controlling development and production versions to develop a digital product in a timely manner with all the established guidelines and objectives, such as: Deploy, both FrontEnd and BackEnd, Integrated third party Auth, Payment gateway, P2P payment and subscription, Combined filtering and sorting, Cloudinary/upload/bucket, Notifications (mail/socket. io), Logical deletion, Local storage/persist, Reviews/scoring, Dashboard admin.",
+            "link_deploy": "https://programax.vercel.app/",
+            "link_repository": "https://github.com/FranNavarro27F/Proyecto_Final"
         }
     ]
 }

@@ -24,6 +24,16 @@
         background-color: var(--Color-Second-1);
         color: var(--Color-Primary-9);
     }
+#card_content_2_button{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+.card_content_2_activeButton{
+    background-color: var(--Color-Primary-5);
+} div.light .card_content_2_activeButton{
+    background-color: var(--Color-Second-6);
+  }
 .card_content_3{
     width: 84vw;
     display: flex;
@@ -43,4 +53,23 @@
     background-color: var(--Color-Primary-5);
 } div.light .card_content_3 button{
     background-color: var(--Color-Second-6);
+  }
+
+
+  /* @media */
+  @media (min-width: 768px) {
+    .project_card{
+        width: auto;
+    }
+    .card_content_1 img{
+        width: 39vw;
+    }
+    .card_content_2{
+        width: 39vw;
+    }
+    .card_content_3{
+        width: 39vw;
+    }   .card_content_3 button {
+            width: 17vw;
+        }
   }

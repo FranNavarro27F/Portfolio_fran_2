@@ -14,7 +14,7 @@ import { useEffect } from 'react';
 import img_cv from './assets/cv_img.jpg';
 import img_work from './assets/check2-circle.svg';
 import img_clock from './assets/hourglass-split.svg';
-import cv from './downloads/CV_fran_jobPrep.pdf';
+import cv from './downloads/cv_2023_03_[20-03-2023].pdf';
 import github_claro from './assets/github_claro.svg';
 import github from './assets/github.svg';
 import Skills_card from './components/Skills_card';
